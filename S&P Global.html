@@ -1,0 +1,907 @@
+<!-- Add this CSS to your existing <style> section -->
+<style>
+/* S&P Global Platts Test Engineering Leadership Section */
+.platts-leadership-showcase {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #1e40af 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.platts-leadership-showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.03"><rect width="20" height="20" x="0" y="0"/><rect width="20" height="20" x="40" y="40"/></g></svg>');
+    animation: slide 25s infinite linear;
+}
+
+@keyframes slide {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-80px, -80px); }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.platts-showcase-content {
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 60px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.platts-showcase-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.platts-showcase-title {
+    font-size: 3rem;
+    color: #1e293b;
+    margin-bottom: 20px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #1e3a8a, #3730a3, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.platts-showcase-subtitle {
+    font-size: 1.4rem;
+    color: #64748b;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.platts-executive-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+}
+
+/* Executive Metrics Grid */
+.platts-executive-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.platts-executive-metric-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 5px solid #1e3a8a;
+    position: relative;
+    overflow: hidden;
+}
+
+.platts-executive-metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #1e3a8a, #3730a3, #7c3aed);
+}
+
+.platts-executive-metric-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.platts-executive-metric-card.scale { border-top-color: #dc2626; }
+.platts-executive-metric-card.scale::before { background: linear-gradient(90deg, #dc2626, #b91c1c); }
+.platts-executive-metric-card.process { border-top-color: #059669; }
+.platts-executive-metric-card.process::before { background: linear-gradient(90deg, #059669, #047857); }
+.platts-executive-metric-card.tech { border-top-color: #7c3aed; }
+.platts-executive-metric-card.tech::before { background: linear-gradient(90deg, #7c3aed, #6d28d9); }
+.platts-executive-metric-card.business { border-top-color: #d97706; }
+.platts-executive-metric-card.business::before { background: linear-gradient(90deg, #d97706, #b45309); }
+
+.platts-metric-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.platts-metric-number {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #1e293b;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.platts-metric-label {
+    color: #64748b;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Career Progression */
+.platts-career-progression {
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    border-radius: 25px;
+    padding: 50px;
+    margin: 60px 0;
+    position: relative;
+}
+
+.platts-progression-title {
+    text-align: center;
+    color: #1e293b;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.platts-progression-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    position: relative;
+}
+
+.platts-progression-role {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #1e3a8a;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.platts-progression-role:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.platts-progression-role.architect { border-left-color: #7c3aed; }
+.platts-progression-role.manager { border-left-color: #059669; }
+.platts-progression-role.director { border-left-color: #dc2626; }
+
+.platts-role-period {
+    background: #1e3a8a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.platts-progression-role.architect .platts-role-period { background: #7c3aed; }
+.platts-progression-role.manager .platts-role-period { background: #059669; }
+.platts-progression-role.director .platts-role-period { background: #dc2626; }
+
+.platts-role-title {
+    color: #1e293b;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.platts-role-achievements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.platts-role-achievements li {
+    background: #f1f5f9;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: #475569;
+    border-left: 4px solid #1e3a8a;
+    line-height: 1.5;
+}
+
+/* Framework Development */
+.platts-frameworks-section {
+    margin: 60px 0;
+}
+
+.platts-frameworks-title {
+    text-align: center;
+    color: #1e293b;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.platts-frameworks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.platts-framework-card {
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-top: 6px solid #1e3a8a;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.platts-framework-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #1e3a8a, #3730a3, #7c3aed);
+}
+
+.platts-framework-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.platts-framework-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.platts-framework-icon {
+    background: linear-gradient(135deg, #1e3a8a, #3730a3);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.platts-framework-name {
+    color: #1e293b;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.platts-framework-description {
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.platts-framework-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.platts-feature-tag {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Organizational Impact */
+.platts-org-impact {
+    background: linear-gradient(135deg, #1e293b, #334155);
+    border-radius: 25px;
+    padding: 50px;
+    margin: 60px 0;
+    color: white;
+}
+
+.platts-impact-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.platts-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.platts-impact-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.platts-impact-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.platts-impact-metric {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+.platts-impact-description {
+    color: #e2e8f0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Technology Ecosystem */
+.platts-tech-ecosystem {
+    margin: 60px 0;
+}
+
+.platts-tech-title {
+    text-align: center;
+    color: #1e293b;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.platts-tech-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.platts-tech-category {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #1e3a8a;
+    transition: all 0.3s ease;
+}
+
+.platts-tech-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.platts-tech-category-title {
+    color: #1e293b;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.platts-tech-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.platts-tech-tool {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.platts-tech-tool:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+/* Call to Action */
+.platts-cta {
+    text-align: center;
+    margin: 60px 0 40px;
+    padding: 40px;
+    background: linear-gradient(135deg, #f8fafc, #e0e7ff);
+    border-radius: 20px;
+    border: 1px solid #c7d2fe;
+}
+
+.platts-cta h4 {
+    color: #1e293b;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.platts-cta p {
+    color: #64748b;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.platts-cta-button {
+    background: linear-gradient(135deg, #1e3a8a, #3730a3);
+    color: white;
+    text-decoration: none;
+    padding: 18px 40px;
+    border-radius: 30px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
+.platts-cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(30, 58, 138, 0.4);
+}
+
+.platts-cta-button.secondary {
+    background: white;
+    color: #1e3a8a;
+    border: 2px solid #1e3a8a;
+}
+
+.platts-cta-button.secondary:hover {
+    background: #1e3a8a;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .platts-showcase-content {
+        padding: 40px 25px;
+    }
+    
+    .platts-showcase-title {
+        font-size: 2.5rem;
+    }
+    
+    .platts-executive-metrics {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .platts-progression-timeline,
+    .platts-frameworks-grid,
+    .platts-tech-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .platts-metric-number {
+        font-size: 2.3rem;
+    }
+}
+</style>
+
+<!-- Add this HTML section for S&P Global Platts experience -->
+<section class="platts-leadership-showcase">
+    <div class="container">
+        <div class="platts-showcase-content">
+            <div class="platts-showcase-header">
+                <h2 class="platts-showcase-title">Associate Director, Test Engineering</h2>
+                <p class="platts-showcase-subtitle">Leading enterprise-scale test engineering transformation during S&P Global Platts' $44B digital evolution</p>
+                <div class="platts-executive-badge">S&P Global Platts | Nov 2017 - Apr 2022</div>
+                <p style="color: #64748b; font-size: 1.1rem; max-width: 900px; margin: 0 auto; line-height: 1.6;">Spearheaded test engineering transformation across 25+ Scrum teams during the industry's largest commodity intelligence platform evolution, establishing automation standards and enabling continuous testing for global financial data platforms serving thousands of organizations worldwide.</p>
+            </div>
+
+            <!-- Executive-Level Metrics -->
+            <div class="platts-executive-metrics">
+                <div class="platts-executive-metric-card scale">
+                    <span class="platts-metric-icon">🏢</span>
+                    <span class="platts-metric-number">25+</span>
+                    <span class="platts-metric-label">Scrum Teams Enabled</span>
+                </div>
+                <div class="platts-executive-metric-card tech">
+                    <span class="platts-metric-icon">🚀</span>
+                    <span class="platts-metric-number">6</span>
+                    <span class="platts-metric-label">Strategic Frameworks Built</span>
+                </div>
+                <div class="platts-executive-metric-card process">
+                    <span class="platts-metric-icon">📊</span>
+                    <span class="platts-metric-number">48+</span>
+                    <span class="platts-metric-label">Applications Supported</span>
+                </div>
+                <div class="platts-executive-metric-card business">
+                    <span class="platts-metric-icon">🌍</span>
+                    <span class="platts-metric-number">40+</span>
+                    <span class="platts-metric-label">Applications Performance Tested</span>
+                </div>
+                <div class="platts-executive-metric-card scale">
+                    <span class="platts-metric-icon">⚡</span>
+                    <span class="platts-metric-number">220+</span>
+                    <span class="platts-metric-label">Story Points Capacity Managed</span>
+                </div>
+                <div class="platts-executive-metric-card tech">
+                    <span class="platts-metric-icon">🔬</span>
+                    <span class="platts-metric-number">500+</span>
+                    <span class="platts-metric-label">Pages Technical Documentation</span>
+                </div>
+                <div class="platts-executive-metric-card scale">
+                    <span class="platts-metric-icon">☁️</span>
+                    <span class="platts-metric-number">3</span>
+                    <span class="platts-metric-label">AWS Regions Managed</span>
+                </div>
+                <div class="platts-executive-metric-card business">
+                    <span class="platts-metric-icon">👥</span>
+                    <span class="platts-metric-number">5+</span>
+                    <span class="platts-metric-label">Team Members Led</span>
+                </div>
+                <div class="platts-executive-metric-card tech">
+                    <span class="platts-metric-icon">📊</span>
+                    <span class="platts-metric-number">4.8/5</span>
+                    <span class="platts-metric-label">Team Satisfaction Score</span>
+                </div>
+                <div class="platts-executive-metric-card process">
+                    <span class="platts-metric-icon">🎯</span>
+                    <span class="platts-metric-number">70+</span>
+                    <span class="platts-metric-label">OWASP Security Verifications</span>
+                </div>
+            </div>
+
+            <!-- Career Progression -->
+            <div class="platts-career-progression">
+                <h3 class="platts-progression-title">📈 Strategic Leadership Evolution</h3>
+                <div class="platts-progression-timeline">
+                    <div class="platts-progression-role architect">
+                        <div class="platts-role-period">Nov 2017 - Apr 2019</div>
+                        <h4 class="platts-role-title">Automation Architect</h4>
+                        <ul class="platts-role-achievements">
+                            <li>Established automation architecture and standards across the organization</li>
+                            <li>Led design and implementation of PACE Framework using Selenium and Java</li>
+                            <li>Adopted by 25+ Scrum teams, eliminating automation redundancy</li>
+                            <li>Drove standardization initiatives enhancing team collaboration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="platts-progression-role manager">
+                        <div class="platts-role-period">Apr 2019 - Apr 2020</div>
+                        <h4 class="platts-role-title">Senior Manager, TestOps</h4>
+                        <ul class="platts-role-achievements">
+                            <li>Developed and standardized Jenkins pipeline protocols for CI/CD integration</li>
+                            <li>Spearheaded DevOps 3D Dashboard implementation for team maturity tracking</li>
+                            <li>Led transformative TestOps initiatives fostering quality and efficiency culture</li>
+                            <li>Established CI/CD best practices streamlining deployment cycles</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="platts-progression-role director">
+                        <div class="platts-role-period">Apr 2020 - Apr 2022</div>
+                        <h4 class="platts-role-title">Associate Director, Test Engineering</h4>
+                        <ul class="platts-role-achievements">
+                            <li>Spearheaded test engineering transformation for global financial data platform</li>
+                            <li>Managed Center of Excellence team establishing standards across 25+ teams</li>
+                            <li>Implemented NEST Framework promoting software testing best practices</li>
+                            <li>Received CTO recognition for fostering proactive delivery culture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Frameworks & Innovations -->
+            <div class="platts-frameworks-section">
+                <h3 class="platts-frameworks-title">🎯 Strategic Frameworks & Enterprise Innovations</h3>
+                <div class="platts-frameworks-grid">
+                    <div class="platts-framework-card">
+                        <div class="platts-framework-header">
+                            <div class="platts-framework-icon">🚀</div>
+                            <h5 class="platts-framework-name">PACE Framework</h5>
+                        </div>
+                        <p class="platts-framework-description">Comprehensive test automation framework supporting Browser, API, Thick Client, Mobile, and Security testing with enterprise scalability</p>
+                        <div class="platts-framework-features">
+                            <span class="platts-feature-tag">Selenium WebDriver</span>
+                            <span class="platts-feature-tag">TestNG & BDD</span>
+                            <span class="platts-feature-tag">CI/CD Integration</span>
+                            <span class="platts-feature-tag">Multi-Platform</span>
+                            <span class="platts-feature-tag">Page Object Model</span>
+                            <span class="platts-feature-tag">Parallel Execution</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-framework-card">
+                        <div class="platts-framework-header">
+                            <div class="platts-framework-icon">📊</div>
+                            <h5 class="platts-framework-name">NEST Framework</h5>
+                        </div>
+                        <p class="platts-framework-description">Best practices framework for software testing excellence, improving quality assurance methodologies and team standardization</p>
+                        <div class="platts-framework-features">
+                            <span class="platts-feature-tag">Best Practices</span>
+                            <span class="platts-feature-tag">Quality Standards</span>
+                            <span class="platts-feature-tag">Team Enablement</span>
+                            <span class="platts-feature-tag">Process Improvement</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-framework-card">
+                        <div class="platts-framework-header">
+                            <div class="platts-framework-icon">⚙️</div>
+                            <h5 class="platts-framework-name">DevOps 3D Dashboard</h5>
+                        </div>
+                        <p class="platts-framework-description">Advanced monitoring and analytics platform for tracking team maturity, performance metrics, and continuous improvement initiatives</p>
+                        <div class="platts-framework-features">
+                            <span class="platts-feature-tag">Team Maturity</span>
+                            <span class="platts-feature-tag">Performance Analytics</span>
+                            <span class="platts-feature-tag">Real-time Monitoring</span>
+                            <span class="platts-feature-tag">Continuous Improvement</span>
+                        </div>
+                    </div>
+
+                    <div class="platts-framework-card">
+                        <div class="platts-framework-header">
+                            <div class="platts-framework-icon">☁️</div>
+                            <h5 class="platts-framework-name">Multi-Region Cloud Operations</h5>
+                        </div>
+                        <p class="platts-framework-description">Architected and managed test infrastructure across AWS regions (US, EU, Asia-Pacific) with automated provisioning and Docker-based load generators</p>
+                        <div class="platts-framework-features">
+                            <span class="platts-feature-tag">AWS Multi-Region</span>
+                            <span class="platts-feature-tag">Ansible Tower</span>
+                            <span class="platts-feature-tag">Docker Orchestration</span>
+                            <span class="platts-feature-tag">CyberArk Integration</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-framework-card">
+                        <div class="platts-framework-header">
+                            <div class="platts-framework-icon">📱</div>
+                            <h5 class="platts-framework-name">Mobile Testing COE</h5>
+                        </div>
+                        <p class="platts-framework-description">Pioneered native mobile app performance testing using TruClient-UFT Mobile with real device and emulator support for enterprise adoption</p>
+                        <div class="platts-framework-features">
+                            <span class="platts-feature-tag">UFT Mobile</span>
+                            <span class="platts-feature-tag">TruClient</span>
+                            <span class="platts-feature-tag">Real Devices</span>
+                            <span class="platts-feature-tag">Performance Testing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-framework-card">
+                        <div class="platts-framework-header">
+                            <div class="platts-framework-icon">🔐</div>
+                            <h5 class="platts-framework-name">Security & Data Encryption</h5>
+                        </div>
+                        <p class="platts-framework-description">Developed Base64 encryption utility for secure test data management with enterprise-grade credential management using CyberArk</p>
+                        <div class="platts-framework-features">
+                            <span class="platts-feature-tag">Base64 Encryption</span>
+                            <span class="platts-feature-tag">CyberArk PAM</span>
+                            <span class="platts-feature-tag">Secure Testing</span>
+                            <span class="platts-feature-tag">OWASP ZAP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-framework-card">
+                        <div class="platts-framework-header">
+                            <div class="platts-framework-icon">🛡️</div>
+                            <h5 class="platts-framework-name">OWASP Security Testing Integration</h5>
+                        </div>
+                        <p class="platts-framework-description">Integrated comprehensive security testing with OWASP ZAP into PACE Framework, enabling automated vulnerability scanning with 70+ security verification requirements</p>
+                        <div class="platts-framework-features">
+                            <span class="platts-feature-tag">OWASP ZAP Integration</span>
+                            <span class="platts-feature-tag">Automated Scanning</span>
+                            <span class="platts-feature-tag">70+ Verification Points</span>
+                            <span class="platts-feature-tag">CI/CD Integration</span>
+                            <span class="platts-feature-tag">Early Vulnerability Detection</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-framework-card">
+                        <div class="platts-framework-header">
+                            <div class="platts-framework-icon">🎓</div>
+                            <h5 class="platts-framework-name">Comprehensive Training & Certification Program</h5>
+                        </div>
+                        <p class="platts-framework-description">Established enterprise-wide training ecosystem with certification paths, recorded sessions, and hands-on enablement covering automation, performance, and security testing</p>
+                        <div class="platts-framework-features">
+                            <span class="platts-feature-tag">Multi-Technology Training</span>
+                            <span class="platts-feature-tag">Certification Paths</span>
+                            <span class="platts-feature-tag">Recorded Sessions</span>
+                            <span class="platts-feature-tag">Hands-on Enablement</span>
+                            <span class="platts-feature-tag">Team Onboarding (3.5 days)</span>
+                            <span class="platts-feature-tag">WebStream Portal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organizational Impact -->
+            <div class="platts-org-impact">
+                <h3 class="platts-impact-title">🌟 Enterprise-Scale Transformation Impact</h3>
+                <div class="platts-impact-grid">
+                    <div class="platts-impact-item">
+                        <span class="platts-impact-icon">🏗️</span>
+                        <div class="platts-impact-metric">$44B Merger Support</div>
+                        <p class="platts-impact-description">Successfully supported IHS Markit acquisition creating world's leading commodity intelligence platform with seamless test engineering integration</p>
+                    </div>
+                    <div class="platts-impact-item">
+                        <span class="platts-impact-icon">📈</span>
+                        <div class="platts-impact-metric">Multi-Region Scale</div>
+                        <p class="platts-impact-description">Managed test infrastructure across 3 AWS regions with automated provisioning and Docker orchestration supporting global operations</p>
+                    </div>
+                    <div class="platts-impact-item">
+                        <span class="platts-impact-icon">⚡</span>
+                        <div class="platts-impact-metric">Team Excellence</div>
+                        <p class="platts-impact-description">Maintained 4.8/5 team satisfaction scores through systematic retrospectives and continuous improvement processes</p>
+                    </div>
+                    <div class="platts-impact-item">
+                        <span class="platts-impact-icon">🔬</span>
+                        <div class="platts-impact-metric">Innovation Leadership</div>
+                        <p class="platts-impact-description">Delivered 4 groundbreaking POCs in mobile testing, security encryption, and performance engineering for enterprise adoption</p>
+                    </div>
+                    <div class="platts-impact-item">
+                        <span class="platts-impact-icon">📚</span>
+                        <div class="platts-impact-metric">Comprehensive Knowledge Hub</div>
+                        <p class="platts-impact-description">Created extensive documentation repository with 500+ pages of technical guidance, performance testing standards for 40+ applications, and security testing guidelines covering 70+ OWASP verification requirements</p>
+                    </div>
+                    <div class="platts-impact-item">
+                        <span class="platts-impact-icon">🎯</span>
+                        <div class="platts-impact-metric">Strategic Planning</div>
+                        <p class="platts-impact-description">Implemented advanced capacity planning managing 220+ story points across performance and automation teams</p>
+                    </div>
+                    <div class="platts-impact-item">
+                        <span class="platts-impact-icon">🏆</span>
+                        <div class="platts-impact-metric">Industry Best Practices</div>
+                        <p class="platts-impact-description">Established comprehensive CI/CD integration with Jenkins pipelines, enabling continuous testing adoption across 25+ Scrum teams with standardized onboarding processes</p>
+                    </div>
+                    <div class="platts-impact-item">
+                        <span class="platts-impact-icon">🌐</span>
+                        <div class="platts-impact-metric">Cross-Functional Leadership</div>
+                        <p class="platts-impact-description">Orchestrated collaboration across multiple technology towers, geographical locations (US, UK, Singapore), and business verticals during critical digital transformation initiatives</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Ecosystem -->
+            <div class="platts-tech-ecosystem">
+                <h3 class="platts-tech-title">🛠️ Enterprise Technology Ecosystem</h3>
+                <div class="platts-tech-categories">
+                    <div class="platts-tech-category">
+                        <h5 class="platts-tech-category-title">🧪 Test Automation</h5>
+                        <div class="platts-tech-tools">
+                            <span class="platts-tech-tool">Selenium WebDriver</span>
+                            <span class="platts-tech-tool">TestNG</span>
+                            <span class="platts-tech-tool">Cucumber BDD</span>
+                            <span class="platts-tech-tool">Rest Assured</span>
+                            <span class="platts-tech-tool">LeanFT</span>
+                            <span class="platts-tech-tool">Appium</span>
+                            <span class="platts-tech-tool">UFT Mobile</span>
+                            <span class="platts-tech-tool">TruClient</span>
+                            <span class="platts-tech-tool">Docker Selenium Grid</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-tech-category">
+                        <h5 class="platts-tech-category-title">⚡ Performance Testing</h5>
+                        <div class="platts-tech-tools">
+                            <span class="platts-tech-tool">JMeter</span>
+                            <span class="platts-tech-tool">LoadRunner Enterprise</span>
+                            <span class="platts-tech-tool">Storm Runner</span>
+                            <span class="platts-tech-tool">Docker Load Generators</span>
+                            <span class="platts-tech-tool">InfluxDB</span>
+                            <span class="platts-tech-tool">Grafana</span>
+                            <span class="platts-tech-tool">Multi-Region Testing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-tech-category">
+                        <h5 class="platts-tech-category-title">🔧 DevOps & CI/CD</h5>
+                        <div class="platts-tech-tools">
+                            <span class="platts-tech-tool">Jenkins</span>
+                            <span class="platts-tech-tool">Maven</span>
+                            <span class="platts-tech-tool">Git</span>
+                            <span class="platts-tech-tool">Azure DevOps</span>
+                            <span class="platts-tech-tool">Docker</span>
+                            <span class="platts-tech-tool">Ansible Tower</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-tech-category">
+                        <h5 class="platts-tech-category-title">🔒 Security Testing</h5>
+                        <div class="platts-tech-tools">
+                            <span class="platts-tech-tool">OWASP ZAP</span>
+                            <span class="platts-tech-tool">Security Frameworks</span>
+                            <span class="platts-tech-tool">Vulnerability Testing</span>
+                            <span class="platts-tech-tool">Base64 Encryption</span>
+                            <span class="platts-tech-tool">CyberArk PAM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-tech-category">
+                        <h5 class="platts-tech-category-title">📊 Test Management</h5>
+                        <div class="platts-tech-tools">
+                            <span class="platts-tech-tool">Ready API</span>
+                            <span class="platts-tech-tool">UFT</span>
+                            <span class="platts-tech-tool">BrowserStack</span>
+                            <span class="platts-tech-tool">Test Observability</span>
+                            <span class="platts-tech-tool">SharePoint Integration</span>
+                            <span class="platts-tech-tool">SailPoint</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-tech-category">
+                        <h5 class="platts-tech-category-title">☁️ Cloud & Infrastructure</h5>
+                        <div class="platts-tech-tools">
+                            <span class="platts-tech-tool">AWS Multi-Region</span>
+                            <span class="platts-tech-tool">VDI Infrastructure</span>
+                            <span class="platts-tech-tool">CyberArk</span>
+                            <span class="platts-tech-tool">Virtualization</span>
+                            <span class="platts-tech-tool">EC2 Management</span>
+                            <span class="platts-tech-tool">AMI Creation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-tech-category">
+                        <h5 class="platts-tech-category-title">📋 Project Management & Analytics</h5>
+                        <div class="platts-tech-tools">
+                            <span class="platts-tech-tool">Azure DevOps</span>
+                            <span class="platts-tech-tool">VSTS User Stories</span>
+                            <span class="platts-tech-tool">Capacity Planning</span>
+                            <span class="platts-tech-tool">DevOps 3D Dashboard</span>
+                            <span class="platts-tech-tool">Performance Analytics</span>
+                            <span class="platts-tech-tool">Team Maturity Tracking</span>
+                        </div>
+                    </div>
+                    
+                    <div class="platts-tech-category">
+                        <h5 class="platts-tech-category-title">🎓 Training & Enablement</h5>
+                        <div class="platts-tech-tools">
+                            <span class="platts-tech-tool">Microsoft Stream</span>
+                            <span class="platts-tech-tool">WebStream Portal</span>
+                            <span class="platts-tech-tool">Certification Programs</span>
+                            <span class="platts-tech-tool">ISTQB Standards</span>
+                            <span class="platts-tech-tool">AWS Certifications</span>
+                            <span class="platts-tech-tool">Jenkins Training</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="platts-cta">
+                <h4>🚀 Ready to Discuss Enterprise Test Engineering Leadership?</h4>
+                <p>Let's explore how my experience in scaling test engineering across global financial platforms, architecting comprehensive automation and security testing frameworks, managing multi-region cloud infrastructure for 40+ applications, leading cross-functional teams of 5+ engineers across multiple locations, establishing industry-leading training and certification programs, and driving innovation through enterprise-scale POCs and digital transformation initiatives can accelerate your organization's quality transformation and technical excellence</p>
+                <a href="mailto:ankitrathi85@gmail.com" class="platts-cta-button">
+                    📧 Connect via Email
+                </a>
+                <a href="https://linkedin.com/in/ankitrathi85" target="_blank" class="platts-cta-button secondary">
+                    💼 View LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

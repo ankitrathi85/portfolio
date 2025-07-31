@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Leadership at Prodigi/Hogarth India</title>
+    <style>
+        /* Prodigi/Hogarth India QA Leadership Section */
+        .prodigi-leadership-showcase {
+            background: linear-gradient(135deg, #e11d48 0%, #be185d 50%, #9f1239 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .prodigi-leadership-showcase::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="40" cy="40" r="15"/><circle cx="10" cy="10" r="8"/><circle cx="70" cy="70" r="8"/></g></svg>');
+            animation: float 30s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-80px, -80px) rotate(360deg); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .prodigi-showcase-content {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 60px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .prodigi-showcase-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .prodigi-showcase-title {
+            font-size: 3rem;
+            color: #1e293b;
+            margin-bottom: 20px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #e11d48, #be185d, #7c2d12);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .prodigi-showcase-subtitle {
+            font-size: 1.4rem;
+            color: #64748b;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .prodigi-executive-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ea580c, #c2410c);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 35px;
+            box-shadow: 0 8px 25px rgba(234, 88, 12, 0.3);
+        }
+
+        /* Transformation Timeline */
+        .transformation-timeline {
+            background: linear-gradient(135deg, #fef3c7, #fed7aa);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            border-left: 6px solid #f59e0b;
+        }
+
+        .timeline-title {
+            color: #92400e;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .timeline-content {
+            color: #78350f;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Executive Metrics Grid */
+        .prodigi-executive-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .prodigi-executive-metric-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-top: 5px solid #e11d48;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .prodigi-executive-metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #e11d48, #be185d, #9f1239);
+        }
+
+        .prodigi-executive-metric-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .prodigi-executive-metric-card.apple { border-top-color: #000; }
+        .prodigi-executive-metric-card.apple::before { background: linear-gradient(90deg, #000, #1f2937); }
+        .prodigi-executive-metric-card.digital { border-top-color: #059669; }
+        .prodigi-executive-metric-card.digital::before { background: linear-gradient(90deg, #059669, #047857); }
+        .prodigi-executive-metric-card.automation { border-top-color: #7c3aed; }
+        .prodigi-executive-metric-card.automation::before { background: linear-gradient(90deg, #7c3aed, #6d28d9); }
+        .prodigi-executive-metric-card.localization { border-top-color: #ea580c; }
+        .prodigi-executive-metric-card.localization::before { background: linear-gradient(90deg, #ea580c, #c2410c); }
+
+        .prodigi-metric-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .prodigi-metric-number {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #1e293b;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .prodigi-metric-label {
+            color: #64748b;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        /* Apple Localization Impact */
+        .apple-localization-section {
+            background: linear-gradient(135deg, #1f2937, #111827);
+            border-radius: 25px;
+            padding: 50px;
+            margin: 60px 0;
+            color: white;
+        }
+
+        .apple-section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .apple-impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .apple-impact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .apple-impact-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .apple-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+
+        .apple-card-icon {
+            font-size: 2rem;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .apple-card-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .apple-card-description {
+            color: #d1d5db;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .apple-achievement-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .apple-achievement-tag {
+            background: rgba(0, 0, 0, 0.3);
+            color: #f3f4f6;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Major Client Portfolio */
+        .client-portfolio-section {
+            margin: 60px 0;
+        }
+
+        .client-section-title {
+            text-align: center;
+            color: #1e293b;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .client-portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .client-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #e11d48;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .client-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #e11d48, #be185d, #9f1239);
+        }
+
+        .client-card.apple { border-top-color: #000; }
+        .client-card.apple::before { background: linear-gradient(90deg, #000, #1f2937); }
+        .client-card.tkmaxx { border-top-color: #dc2626; }
+        .client-card.tkmaxx::before { background: linear-gradient(90deg, #dc2626, #b91c1c); }
+        .client-card.nescafe { border-top-color: #92400e; }
+        .client-card.nescafe::before { background: linear-gradient(90deg, #92400e, #78350f); }
+        .client-card.santander { border-top-color: #dc2626; }
+        .client-card.santander::before { background: linear-gradient(90deg, #dc2626, #b91c1c); }
+
+        .client-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .client-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+
+        .client-logo {
+            font-size: 3rem;
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border: 2px solid #e2e8f0;
+        }
+
+        .client-info {
+            flex: 1;
+        }
+
+        .client-name {
+            color: #1e293b;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .client-industry {
+            color: #64748b;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .client-description {
+            color: #475569;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .client-achievements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .achievement-tag {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Custom Tools Development */
+        .tools-development-section {
+            margin: 60px 0;
+        }
+
+        .tools-section-title {
+            text-align: center;
+            color: #1e293b;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #e11d48;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #e11d48, #be185d, #9f1239);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .tool-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .tool-icon {
+            background: linear-gradient(135deg, #e11d48, #be185d);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+        }
+
+        .tool-name {
+            color: #1e293b;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .tool-description {
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .tool-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tool-feature-tag {
+            background: #fdf2f8;
+            color: #be185d;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Technology Stack */
+        .tech-stack-section {
+            margin: 60px 0;
+        }
+
+        .tech-stack-title {
+            text-align: center;
+            color: #1e293b;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .tech-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .tech-category {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #e11d48;
+            transition: all 0.3s ease;
+        }
+
+        .tech-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .tech-category-title {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .tech-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tech-tool {
+            background: #fef7ff;
+            color: #86198f;
+            padding: 8px 14px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #f3e8ff;
+            transition: all 0.2s ease;
+        }
+
+        .tech-tool:hover {
+            background: #f3e8ff;
+            color: #701a75;
+        }
+
+        /* Company Transformation */
+        .company-transformation {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border-radius: 25px;
+            padding: 50px;
+            margin: 60px 0;
+        }
+
+        .transformation-title {
+            text-align: center;
+            color: #0c4a6e;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .transformation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .transformation-item {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 2px solid #bae6fd;
+        }
+
+        .transformation-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .transformation-metric {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #0c4a6e;
+            margin-bottom: 10px;
+        }
+
+        .transformation-description {
+            color: #475569;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Call to Action */
+        .prodigi-cta {
+            text-align: center;
+            margin: 60px 0 40px;
+            padding: 40px;
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-radius: 20px;
+            border: 1px solid #f59e0b;
+        }
+
+        .prodigi-cta h4 {
+            color: #92400e;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .prodigi-cta p {
+            color: #78350f;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .prodigi-cta-button {
+            background: linear-gradient(135deg, #e11d48, #be185d);
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 30px;
+            font-weight: 700;
+            display: inline-block;
+            margin: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(225, 29, 72, 0.3);
+        }
+
+        .prodigi-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(225, 29, 72, 0.4);
+        }
+
+        .prodigi-cta-button.secondary {
+            background: white;
+            color: #e11d48;
+            border: 2px solid #e11d48;
+        }
+
+        .prodigi-cta-button.secondary:hover {
+            background: #e11d48;
+            color: white;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .prodigi-showcase-content {
+                padding: 40px 25px;
+            }
+            
+            .prodigi-showcase-title {
+                font-size: 2.5rem;
+            }
+            
+            .prodigi-executive-metrics {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .tools-grid,
+            .tech-categories,
+            .client-portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .prodigi-metric-number {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="prodigi-leadership-showcase">
+        <div class="container">
+            <div class="prodigi-showcase-content">
+                <div class="prodigi-showcase-header">
+                    <h2 class="prodigi-showcase-title">QA Lead</h2>
+                    <p class="prodigi-showcase-subtitle">Leading quality assurance transformation during WPP's strategic expansion and Apple's Middle East localization initiative</p>
+                    <div class="prodigi-executive-badge">Prodigi India (Quasar Media / Hogarth India) | Sep 3, 2015 - Nov 10, 2017</div>
+                    <p style="color: #64748b; font-size: 1.1rem; max-width: 900px; margin: 0 auto; line-height: 1.6;">Spearheaded QA operations during a transformative period including Hogarth's acquisition of Prodigi (March 2016), establishing comprehensive testing frameworks for Apple's Middle East localization project, delivering digital media testing for major brands including TKmaxx and Nescafé, and developing robust Selenium Java automation for Santander Bank during WPP's strategic India expansion.</p>
+                </div>
+
+                <!-- Major Client Portfolio -->
+                <div class="client-portfolio-section">
+                    <h3 class="client-section-title">🌟 Major Client Portfolio & Cross-Industry Excellence</h3>
+                    <div class="client-portfolio-grid">
+                        <div class="client-card apple">
+                            <div class="client-header">
+                                <div class="client-logo">🍎</div>
+                                <div class="client-info">
+                                    <h5 class="client-name">Apple</h5>
+                                    <p class="client-industry">Technology & Global Localization</p>
+                                </div>
+                            </div>
+                            <div class="client-description">
+                                Led comprehensive QA for Apple's historic Middle East expansion, testing 8 localized websites with Arabic right-to-left layouts, cultural adaptations, and seamless integration with flagship store launches in Dubai and Abu Dhabi.
+                            </div>
+                            <div class="client-achievements">
+                                <span class="achievement-tag">Middle East Localization</span>
+                                <span class="achievement-tag">Arabic RTL Testing</span>
+                                <span class="achievement-tag">Cultural Adaptation</span>
+                                <span class="achievement-tag">Global Launch Support</span>
+                            </div>
+                        </div>
+
+                        <div class="client-card tkmaxx">
+                            <div class="client-header">
+                                <div class="client-logo">🛍️</div>
+                                <div class="client-info">
+                                    <h5 class="client-name">TKmaxx</h5>
+                                    <p class="client-industry">Retail & E-commerce</p>
+                                </div>
+                            </div>
+                            <div class="client-description">
+                                Led comprehensive digital media testing for TKmaxx's online platform, ensuring seamless user experience across their discount retail ecosystem with focus on inventory management, pricing accuracy, and checkout optimization.
+                            </div>
+                            <div class="client-achievements">
+                                <span class="achievement-tag">E-commerce Testing</span>
+                                <span class="achievement-tag">Payment Systems</span>
+                                <span class="achievement-tag">Inventory Validation</span>
+                                <span class="achievement-tag">User Journey Testing</span>
+                            </div>
+                        </div>
+
+                        <div class="client-card nescafe">
+                            <div class="client-header">
+                                <div class="client-logo">☕</div>
+                                <div class="client-info">
+                                    <h5 class="client-name">Nescafé</h5>
+                                    <p class="client-industry">Consumer Goods & Brand Digital</p>
+                                </div>
+                            </div>
+                            <div class="client-description">
+                                Executed sophisticated digital media testing for Nescafé's brand campaigns and interactive digital experiences, validating content delivery, engagement metrics, and cross-platform brand consistency.
+                            </div>
+                            <div class="client-achievements">
+                                <span class="achievement-tag">Brand Campaign Testing</span>
+                                <span class="achievement-tag">Interactive Media</span>
+                                <span class="achievement-tag">Content Validation</span>
+                                <span class="achievement-tag">Multi-Platform Testing</span>
+                            </div>
+                        </div>
+
+                        <div class="client-card santander">
+                            <div class="client-header">
+                                <div class="client-logo">🏦</div>
+                                <div class="client-info">
+                                    <h5 class="client-name">Santander Bank</h5>
+                                    <p class="client-industry">Financial Services & Banking</p>
+                                </div>
+                            </div>
+                            <div class="client-description">
+                                Developed and implemented robust Selenium Java test automation framework for Santander's digital banking platform, ensuring security, compliance, and seamless customer transaction processing.
+                            </div>
+                            <div class="client-achievements">
+                                <span class="achievement-tag">Banking Automation</span>
+                                <span class="achievement-tag">Selenium Java Framework</span>
+                                <span class="achievement-tag">Security Testing</span>
+                                <span class="achievement-tag">Transaction Validation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Transformation Timeline -->
+                <div class="transformation-timeline">
+                    <div class="timeline-title">
+                        🚀 Strategic Transformation Period
+                    </div>
+                    <div class="timeline-content">
+                        <strong>March 2016:</strong> Witnessed and contributed to Hogarth Worldwide's acquisition of Prodigi during tenure, supporting the strategic transition from an 80-person startup to planned 300+ employee operation as part of WPP's £7.5B+ digital expansion. This acquisition positioned the company as a key player in WPP's global marketing implementation strategy, with planned 275% workforce growth and establishment of India as a critical production hub for multinational clients.
+                    </div>
+                </div>
+
+                <!-- Executive-Level Metrics -->
+                <div class="prodigi-executive-metrics">
+                    <div class="prodigi-executive-metric-card apple">
+                        <span class="prodigi-metric-icon">🍎</span>
+                        <span class="prodigi-metric-number">8</span>
+                        <span class="prodigi-metric-label">Middle East Apple Websites</span>
+                    </div>
+                    <div class="prodigi-executive-metric-card digital">
+                        <span class="prodigi-metric-icon">🏪</span>
+                        <span class="prodigi-metric-number">4</span>
+                        <span class="prodigi-metric-label">Major Global Brands</span>
+                    </div>
+                    <div class="prodigi-executive-metric-card automation">
+                        <span class="prodigi-metric-icon">🏦</span>
+                        <span class="prodigi-metric-number">4</span>
+                        <span class="prodigi-metric-label">Industry Verticals</span>
+                    </div>
+                    <div class="prodigi-executive-metric-card localization">
+                        <span class="prodigi-metric-icon">🌍</span>
+                        <span class="prodigi-metric-number">25+</span>
+                        <span class="prodigi-metric-label">Localization Test Scenarios</span>
+                    </div>
+                    <div class="prodigi-executive-metric-card apple">
+                        <span class="prodigi-metric-icon">🔍</span>
+                        <span class="prodigi-metric-number">100%</span>
+                        <span class="prodigi-metric-label">Right-to-Left UI Coverage</span>
+                    </div>
+                    <div class="prodigi-executive-metric-card digital">
+                        <span class="prodigi-metric-icon">⚡</span>
+                        <span class="prodigi-metric-number">95%</span>
+                        <span class="prodigi-metric-label">Test Automation Coverage</span>
+                    </div>
+                    <div class="prodigi-executive-metric-card localization">
+                        <span class="prodigi-metric-icon">📱</span>
+                        <span class="prodigi-metric-number">12+</span>
+                        <span class="prodigi-metric-label">Cross-Platform Validations</span>
+                    </div>
+                    <div class="prodigi-executive-metric-card automation">
+                        <span class="prodigi-metric-icon">🚀</span>
+                        <span class="prodigi-metric-number">75%</span>
+                        <span class="prodigi-metric-label">Testing Efficiency Improvement</span>
+                    </div>
+                </div>
+
+                <!-- Apple Localization Impact -->
+                <div class="apple-localization-section">
+                    <h3 class="apple-section-title">
+                        <span>🍎</span>
+                        Apple Middle East Localization Excellence
+                    </h3>
+                    <div class="apple-impact-grid">
+                        <div class="apple-impact-card">
+                            <div class="apple-card-header">
+                                <div class="apple-card-icon">🌐</div>
+                                <h5 class="apple-card-title">Comprehensive Regional Testing</h5>
+                            </div>
+                            <p class="apple-card-description">Led end-to-end QA for Apple's first Arabic website launch covering UAE, Saudi Arabia, Kuwait, Qatar, Bahrain, Oman, Jordan, and Lebanon markets with culturally adapted user experiences.</p>
+                            <div class="apple-achievement-tags">
+                                <span class="apple-achievement-tag">Cultural Adaptation</span>
+                                <span class="apple-achievement-tag">RTL Layout Testing</span>
+                                <span class="apple-achievement-tag">Arabic Typography</span>
+                                <span class="apple-achievement-tag">Regional Compliance</span>
+                            </div>
+                        </div>
+                        
+                        <div class="apple-impact-card">
+                            <div class="apple-card-header">
+                                <div class="apple-card-icon">📱</div>
+                                <h5 class="apple-card-title">Cross-Platform Validation</h5>
+                            </div>
+                            <p class="apple-card-description">Established comprehensive testing protocols for desktop, mobile, and tablet experiences ensuring consistent Arabic content rendering and functionality across all Apple digital touchpoints.</p>
+                            <div class="apple-achievement-tags">
+                                <span class="apple-achievement-tag">Multi-Device Testing</span>
+                                <span class="apple-achievement-tag">Safari Optimization</span>
+                                <span class="apple-achievement-tag">iOS Integration</span>
+                                <span class="apple-achievement-tag">Performance Validation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="apple-impact-card">
+                            <div class="apple-card-header">
+                                <div class="apple-card-icon">🎯</div>
+                                <h5 class="apple-card-title">Localization Quality Assurance</h5>
+                            </div>
+                            <p class="apple-card-description">Developed specialized testing frameworks for Arabic content validation, right-to-left reading patterns, cultural sensitivity, and regional market-specific features including pricing and payment methods.</p>
+                            <div class="apple-achievement-tags">
+                                <span class="apple-achievement-tag">Linguistic Testing</span>
+                                <span class="apple-achievement-tag">Currency Validation</span>
+                                <span class="apple-achievement-tag">Content Adaptation</span>
+                                <span class="apple-achievement-tag">Cultural Compliance</span>
+                            </div>
+                        </div>
+                        
+                        <div class="apple-impact-card">
+                            <div class="apple-card-header">
+                                <div class="apple-card-icon">🚀</div>
+                                <h5 class="apple-card-title">Strategic Market Launch</h5>
+                            </div>
+                            <p class="apple-card-description">Coordinated with Apple's global teams during their historic Middle East expansion coinciding with Dubai and Abu Dhabi Apple Store openings, ensuring seamless digital-physical retail integration.</p>
+                            <div class="apple-achievement-tags">
+                                <span class="apple-achievement-tag">Launch Coordination</span>
+                                <span class="apple-achievement-tag">Global Collaboration</span>
+                                <span class="apple-achievement-tag">Retail Integration</span>
+                                <span class="apple-achievement-tag">Timeline Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Tools Development -->
+                <div class="tools-development-section">
+                    <h3 class="tools-section-title">🛠️ Custom Automation Tools & Innovations</h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">🔍</div>
+                                <h5 class="tool-name">Console Error Checker</h5>
+                            </div>
+                            <p class="tool-description">Developed intelligent browser console monitoring tool to automatically detect and categorize JavaScript errors, performance warnings, and debugging messages across multiple localized websites.</p>
+                            <div class="tool-features">
+                                <span class="tool-feature-tag">Real-time Monitoring</span>
+                                <span class="tool-feature-tag">Error Classification</span>
+                                <span class="tool-feature-tag">Multi-Browser Support</span>
+                                <span class="tool-feature-tag">Automated Reporting</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">🕷️</div>
+                                <h5 class="tool-name">Website Crawler</h5>
+                            </div>
+                            <p class="tool-description">Built comprehensive web crawling solution for automated discovery and validation of website content, ensuring complete coverage of localized pages and dynamic content rendering.</p>
+                            <div class="tool-features">
+                                <span class="tool-feature-tag">Deep Crawling</span>
+                                <span class="tool-feature-tag">Content Discovery</span>
+                                <span class="tool-feature-tag">URL Validation</span>
+                                <span class="tool-feature-tag">Sitemap Generation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">🔗</div>
+                                <h5 class="tool-name">Page Sanity Link Checker</h5>
+                            </div>
+                            <p class="tool-description">Created advanced link validation system to verify internal/external links, image sources, and resource availability across multiple language versions and regional websites.</p>
+                            <div class="tool-features">
+                                <span class="tool-feature-tag">Link Validation</span>
+                                <span class="tool-feature-tag">Resource Checking</span>
+                                <span class="tool-feature-tag">Broken Link Detection</span>
+                                <span class="tool-feature-tag">Regional Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <div class="tool-header">
+                                <div class="tool-icon">📧</div>
+                                <h5 class="tool-name">Digital Email Campaign Tester</h5>
+                            </div>
+                            <p class="tool-description">Engineered sophisticated email testing framework for digital marketing campaigns with support for template validation, personalization testing, and cross-client compatibility verification.</p>
+                            <div class="tool-features">
+                                <span class="tool-feature-tag">Template Testing</span>
+                                <span class="tool-feature-tag">Client Compatibility</span>
+                                <span class="tool-feature-tag">Personalization</span>
+                                <span class="tool-feature-tag">Campaign Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Stack -->
+                <div class="tech-stack-section">
+                    <h3 class="tech-stack-title">💻 Technology Ecosystem & Testing Stack</h3>
+                    <div class="tech-categories">
+                        <div class="tech-category">
+                            <h5 class="tech-category-title">🧪 Test Automation</h5>
+                            <div class="tech-tools">
+                                <span class="tech-tool">Selenium WebDriver</span>
+                                <span class="tech-tool">Java</span>
+                                <span class="tech-tool">TestNG</span>
+                                <span class="tech-tool">Maven</span>
+                                <span class="tech-tool">JUnit</span>
+                                <span class="tech-tool">Page Object Model</span>
+                                <span class="tech-tool">Data-Driven Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h5 class="tech-category-title">🌍 Localization Testing</h5>
+                            <div class="tech-tools">
+                                <span class="tech-tool">Arabic RTL Testing</span>
+                                <span class="tech-tool">Unicode Validation</span>
+                                <span class="tech-tool">Cultural Adaptation</span>
+                                <span class="tech-tool">Regional Compliance</span>
+                                <span class="tech-tool">Font Rendering</span>
+                                <span class="tech-tool">Currency Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h5 class="tech-category-title">📱 Cross-Platform Testing</h5>
+                            <div class="tech-tools">
+                                <span class="tech-tool">BrowserStack</span>
+                                <span class="tech-tool">Mobile Testing</span>
+                                <span class="tech-tool">iOS Safari</span>
+                                <span class="tech-tool">Android Chrome</span>
+                                <span class="tech-tool">Desktop Browsers</span>
+                                <span class="tech-tool">Responsive Design</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h5 class="tech-category-title">⚡ Performance Testing</h5>
+                            <div class="tech-tools">
+                                <span class="tech-tool">LoadRunner</span>
+                                <span class="tech-tool">JMeter</span>
+                                <span class="tech-tool">Performance Analysis</span>
+                                <span class="tech-tool">Load Testing</span>
+                                <span class="tech-tool">Stress Testing</span>
+                                <span class="tech-tool">Capacity Planning</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h5 class="tech-category-title">🏦 Banking & Financial Testing</h5>
+                            <div class="tech-tools">
+                                <span class="tech-tool">Selenium Java Framework</span>
+                                <span class="tech-tool">Financial Compliance</span>
+                                <span class="tech-tool">Transaction Testing</span>
+                                <span class="tech-tool">Security Validation</span>
+                                <span class="tech-tool">Data Privacy Testing</span>
+                                <span class="tech-tool">PCI DSS Compliance</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h5 class="tech-category-title">📊 Test Management</h5>
+                            <div class="tech-tools">
+                                <span class="tech-tool">Test Case Management</span>
+                                <span class="tech-tool">Defect Tracking</span>
+                                <span class="tech-tool">Test Reporting</span>
+                                <span class="tech-tool">Quality Metrics</span>
+                                <span class="tech-tool">Release Management</span>
+                                <span class="tech-tool">Risk Assessment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Transformation Impact -->
+                <div class="company-transformation">
+                    <h3 class="transformation-title">🏢 Strategic Transformation Impact During Tenure</h3>
+                    <div class="transformation-grid">
+                        <div class="transformation-item">
+                            <span class="transformation-icon">🎯</span>
+                            <div class="transformation-metric">March 2016</div>
+                            <p class="transformation-description">Hogarth acquired Prodigi during tenure, transforming from startup to WPP subsidiary with planned 275% workforce expansion</p>
+                        </div>
+                        <div class="transformation-item">
+                            <span class="transformation-icon">🌍</span>
+                            <div class="transformation-metric">Global Reach</div>
+                            <p class="transformation-description">Contributed to WPP's £7.5B+ digital revenue stream as part of strategic India expansion and multinational client servicing</p>
+                        </div>
+                        <div class="transformation-item">
+                            <span class="transformation-icon">🍎</span>
+                            <div class="transformation-metric">Apple Partnership</div>
+                            <p class="transformation-description">Led QA for Apple's historic Middle East expansion coinciding with Dubai/Abu Dhabi flagship store openings</p>
+                        </div>
+                        <div class="transformation-item">
+                            <span class="transformation-icon">📈</span>
+                            <div class="transformation-metric">Market Leadership</div>
+                            <p class="transformation-description">Helped establish India operations as critical production hub in global marketing implementation ecosystem</p>
+                        </div>
+                        <div class="transformation-item">
+                            <span class="transformation-icon">🚀</span>
+                            <div class="transformation-metric">Innovation Drive</div>
+                            <p class="transformation-description">Developed proprietary testing tools during period of technological advancement and automation adoption</p>
+                        </div>
+                        <div class="transformation-item">
+                            <span class="transformation-icon">🏆</span>
+                            <div class="transformation-metric">Quality Excellence</div>
+                            <p class="transformation-description">Established QA standards that supported company's growth from 80 to 300+ planned employees</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="prodigi-cta">
+                    <h4>🌟 Ready to Discuss Digital Marketing QA Leadership?</h4>
+                    <p>Let's explore how my experience in leading QA operations during strategic corporate transformations, spearheading Apple's Middle East localization testing, delivering comprehensive digital media testing for global brands like TKmaxx and Nescafé, developing robust Selenium Java automation frameworks for Santander Bank, establishing cross-industry testing excellence across retail, consumer goods, and financial services, and driving quality excellence during high-growth acquisition periods can accelerate your organization's digital transformation and quality assurance initiatives.</p>
+                    <a href="mailto:ankitrathi85@gmail.com" class="prodigi-cta-button">
+                        📧 Connect via Email
+                    </a>
+                    <a href="https://linkedin.com/in/ankitrathi85" target="_blank" class="prodigi-cta-button secondary">
+                        💼 View LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

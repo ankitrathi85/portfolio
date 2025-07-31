@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Rathi - QA Engineering Leadership Portfolio | 18+ Years of Technical Excellence</title>
+    <meta name="description" content="QA Engineering Leader with 18+ years architecting test automation frameworks across financial services, automotive, travel, and enterprise platforms. Led cross-functional teams of 25+ engineers, pioneered industry-leading QA methodologies, and delivered mission-critical technology solutions for Fortune 500 companies.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.03"><circle cx="50" cy="50" r="4"/><circle cx="25" cy="25" r="3"/><circle cx="75" cy="75" r="3"/></g></svg>');
+            animation: float-pattern 30s infinite linear;
+        }
+
+        @keyframes float-pattern {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-50px, -30px) scale(1.1); }
+            100% { transform: translate(-100px, -60px) scale(1); }
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 60px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            transform: translateY(20px);
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        @keyframes slideUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.8rem;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+            line-height: 1.7;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Key Achievements Grid */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .achievement-card {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border: 2px solid #e8f2ff;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .achievement-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+
+        .achievement-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .achievement-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .achievement-label {
+            color: #666;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        /* Career Journey Section */
+        .journey-section {
+            background: linear-gradient(135deg, #f8f9fa, #e8f2ff);
+            padding: 100px 0;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Portfolio Cards Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .portfolio-card {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            border: 1px solid #e2e8f0;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .portfolio-card.impetus {
+            --primary-color: #059669;
+            --secondary-color: #047857;
+        }
+
+        .portfolio-card.capital-iq {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3730a3;
+        }
+
+        .portfolio-card.sapient {
+            --primary-color: #dc2626;
+            --secondary-color: #991b1b;
+        }
+
+        .portfolio-card.prodigi {
+            --primary-color: #e11d48;
+            --secondary-color: #be185d;
+        }
+
+        .portfolio-card.sp-global {
+            --primary-color: #7c3aed;
+            --secondary-color: #6d28d9;
+        }
+
+        .portfolio-card.whereto {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+        }
+
+        .portfolio-header {
+            padding: 40px 35px 30px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+        }
+
+        .portfolio-period {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-company {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-role {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .portfolio-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .highlight-tag {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+        }
+
+        .portfolio-cta {
+            padding: 0 35px 35px;
+        }
+
+        .portfolio-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            text-align: center;
+        }
+
+        .portfolio-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #2d3748, #4a5568);
+            padding: 80px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .contact-description {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 18px 35px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .contact-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .contact-button.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .contact-button.secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 40px 30px;
+            }
+
+            .hero-title {
+                font-size: 2.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.4rem;
+            }
+
+            .hero-description {
+                font-size: 1.1rem;
+            }
+
+            .achievements-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .section-container {
+                padding: 0 20px;
+            }
+
+            .hero-container {
+                padding: 0 20px;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .achievement-card {
+                padding: 20px;
+            }
+
+            .achievement-number {
+                font-size: 2rem;
+            }
+
+            .portfolio-header {
+                padding: 30px 25px 20px;
+            }
+
+            .portfolio-cta {
+                padding: 0 25px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Ankit Rathi</h1>
+                <p class="hero-subtitle">QA Engineering Leadership & Technical Excellence Expert</p>
+                <p class="hero-description">
+                    Seasoned <strong>QA Engineering Leader</strong> with <strong>18+ years</strong> of technical excellence, architecting comprehensive test automation frameworks across financial services, automotive, travel, and enterprise platforms. Led cross-functional engineering teams of <strong>25+ members</strong>, pioneered industry-leading QA methodologies, and delivered mission-critical technology solutions during pivotal transformations including the 2008 financial crisis and major digital platform migrations.
+                </p>
+
+                <!-- Key Achievements Grid -->
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <span class="achievement-icon">🏢</span>
+                        <div class="achievement-number">6</div>
+                        <div class="achievement-label">Fortune 500 Companies</div>
+                    </div>
+                    <div class="achievement-card">
+                        <span class="achievement-icon">👥</span>
+                        <div class="achievement-number">25+</div>
+                        <div class="achievement-label">Engineers Led</div>
+                    </div>
+                    <div class="achievement-card">
+                        <span class="achievement-icon">🛠️</span>
+                        <div class="achievement-number">15+</div>
+                        <div class="achievement-label">Technology Stacks Mastered</div>
+                    </div>
+                    <div class="achievement-card">
+                        <span class="achievement-icon">🚀</span>
+                        <div class="achievement-number">8</div>
+                        <div class="achievement-label">Strategic Frameworks Built</div>
+                    </div>
+                    <div class="achievement-card">
+                        <span class="achievement-icon">💼</span>
+                        <div class="achievement-number">40+</div>
+                        <div class="achievement-label">Enterprise Applications</div>
+                    </div>
+                    <div class="achievement-card">
+                        <span class="achievement-icon">⚡</span>
+                        <div class="achievement-number">95%+</div>
+                        <div class="achievement-label">Automation Coverage Achieved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Expertise Section -->
+    <section style="background: white; padding: 80px 0;">
+        <div class="section-container">
+            <h2 class="section-title">Technology Leadership & Engineering Expertise</h2>
+            <p class="section-subtitle">
+                18+ years of deep technical expertise across diverse technology stacks, leading engineering teams and architecting enterprise-scale solutions
+            </p>
+
+            <!-- Technology Categories Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px;">
+                
+                <!-- Test Automation & Frameworks -->
+                <div style="background: linear-gradient(135deg, #f8f9fa, #e8f2ff); border-radius: 20px; padding: 30px; border-left: 5px solid #667eea;">
+                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="background: #667eea; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🤖</span>
+                        Test Automation & Frameworks
+                    </h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Selenium WebDriver</span>
+                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">QTP/UFT</span>
+                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">WebDriverIO</span>
+                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Cucumber BDD</span>
+                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">TestNG</span>
+                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">JMeter</span>
+                    </div>
+                </div>
+
+                <!-- Programming & Development -->
+                <div style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-radius: 20px; padding: 30px; border-left: 5px solid #059669;">
+                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="background: #059669; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">💻</span>
+                        Programming & Development
+                    </h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Java</span>
+                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">JavaScript</span>
+                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">VBScript</span>
+                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Node.js</span>
+                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Spring Framework</span>
+                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Maven</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div style="background: linear-gradient(135deg, #fef3c7, #fed7aa); border-radius: 20px; padding: 30px; border-left: 5px solid #f59e0b;">
+                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="background: #f59e0b; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">☁️</span>
+                        Cloud & DevOps Engineering
+                    </h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">AWS Multi-Region</span>
+                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Jenkins CI/CD</span>
+                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Docker</span>
+                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Ansible Tower</span>
+                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Azure DevOps</span>
+                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Kibana/LogStash</span>
+                    </div>
+                </div>
+
+                <!-- Enterprise Platforms -->
+                <div style="background: linear-gradient(135deg, #fdf2f8, #fce7f3); border-radius: 20px; padding: 30px; border-left: 5px solid #e11d48;">
+                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="background: #e11d48; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏢</span>
+                        Enterprise Platforms & Integration
+                    </h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Adobe DayCQ/AEM</span>
+                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">GDS Integration</span>
+                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Amadeus/Sabre</span>
+                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">LoadRunner Enterprise</span>
+                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">BrowserStack</span>
+                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">OWASP ZAP</span>
+                    </div>
+                </div>
+
+                <!-- Security & Compliance -->
+                <div style="background: linear-gradient(135deg, #f3e8ff, #e9d5ff); border-radius: 20px; padding: 30px; border-left: 5px solid #7c3aed;">
+                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="background: #7c3aed; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🔒</span>
+                        Security & Compliance Engineering
+                    </h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">OWASP Guidelines</span>
+                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">SOX Compliance</span>
+                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">XSS Testing</span>
+                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">CyberArk PAM</span>
+                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">WCAG 2.0</span>
+                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Vulnerability Assessment</span>
+                    </div>
+                </div>
+
+                <!-- Industry Domains -->
+                <div style="background: linear-gradient(135deg, #fef7ff, #fdf4ff); border-radius: 20px; padding: 30px; border-left: 5px solid #a855f7;">
+                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <span style="background: #a855f7; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🌐</span>
+                        Industry Domain Expertise
+                    </h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Financial Services</span>
+                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Travel Technology</span>
+                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Automotive Data</span>
+                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Digital Marketing</span>
+                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Sports Entertainment</span>
+                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Commodity Intelligence</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engineering Leadership Highlights -->
+            <div style="background: linear-gradient(135deg, #1e293b, #334155); color: white; border-radius: 25px; padding: 50px; margin-top: 60px; text-align: center;">
+                <h3 style="font-size: 2rem; margin-bottom: 30px; color: white;">Engineering Leadership Philosophy</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+                    <div style="padding: 20px;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🎯</div>
+                        <h4 style="color: #60a5fa; margin-bottom: 10px; font-size: 1.2rem;">Technical Excellence</h4>
+                        <p style="opacity: 0.9; line-height: 1.5;">Architecting scalable automation frameworks and establishing engineering best practices across diverse technology stacks</p>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">👥</div>
+                        <h4 style="color: #60a5fa; margin-bottom: 10px; font-size: 1.2rem;">Team Building</h4>
+                        <p style="opacity: 0.9; line-height: 1.5;">Scaling cross-functional engineering teams and mentoring next-generation QA leaders through hands-on technical guidance</p>
+                    </div>
+                    <div style="padding: 20px;">
+                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🚀</div>
+                        <h4 style="color: #60a5fa; margin-bottom: 10px; font-size: 1.2rem;">Innovation Driver</h4>
+                        <p style="opacity: 0.9; line-height: 1.5;">Pioneering industry-first testing methodologies and driving digital transformation through quality engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Career Journey Section -->
+    <section class="journey-section">
+        <div class="section-container">
+            <h2 class="section-title">Career Journey</h2>
+            <p class="section-subtitle">
+                From startup engineering foundations through enterprise technical leadership, explore the innovative frameworks, automation architectures, and engineering transformations that shaped modern QA practices across industries
+            </p>
+
+            <!-- Portfolio Cards Grid -->
+            <div class="portfolio-grid">
+                <!-- WhereTo Portfolio -->
+                <div class="portfolio-card whereto">
+                    <div class="portfolio-header">
+                        <span class="portfolio-period">April 2022 - June 2025</span>
+                        <h3 class="portfolio-company">WhereTo</h3>
+                        <p class="portfolio-role">Head of QA</p>
+                        <p class="portfolio-description">
+                            Built and scaled a world-class QA engineering organization across 8+ specialized Scrum teams for global travel technology platform serving 6,000+ corporate clients with comprehensive GDS integrations and multi-modal transportation solutions.
+                        </p>
+                        <div class="portfolio-highlights">
+                            <span class="highlight-tag">Enterprise Architecture</span>
+                            <span class="highlight-tag">JET Framework</span>
+                            <span class="highlight-tag">RADAR Framework</span>
+                            <span class="highlight-tag">Travel GDS Integration</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-cta">
+                        <a href="whereto-portfolio-integration.html" class="portfolio-button">
+                            🌍 Explore Travel Tech Leadership
+                        </a>
+                    </div>
+                </div>
+
+                <!-- S&P Global Portfolio -->
+                <div class="portfolio-card sp-global">
+                    <div class="portfolio-header">
+                        <span class="portfolio-period">November 2017 - April 2022</span>
+                        <h3 class="portfolio-company">S&P Global Platts</h3>
+                        <p class="portfolio-role">Associate Director, Test Engineering</p>
+                        <p class="portfolio-description">
+                            Led enterprise-scale test engineering transformation across 25+ Scrum teams during $44B IHS Markit merger, establishing automation standards for global financial data platforms.
+                        </p>
+                        <div class="portfolio-highlights">
+                            <span class="highlight-tag">PACE Framework</span>
+                            <span class="highlight-tag">NEST Framework</span>
+                            <span class="highlight-tag">Multi-Region AWS</span>
+                            <span class="highlight-tag">40+ Applications</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-cta">
+                        <a href="S&P Global.html" class="portfolio-button">
+                            📊 Explore Enterprise Leadership
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Prodigi/Hogarth Portfolio -->
+                <div class="portfolio-card prodigi">
+                    <div class="portfolio-header">
+                        <span class="portfolio-period">September 2015 - November 2017</span>
+                        <h3 class="portfolio-company">Prodigi India / Hogarth India</h3>
+                        <p class="portfolio-role">QA Lead</p>
+                        <p class="portfolio-description">
+                            Spearheaded QA during Hogarth's acquisition of Prodigi, leading Apple's Middle East localization project and digital media testing for major brands including TKmaxx and Nescafé.
+                        </p>
+                        <div class="portfolio-highlights">
+                            <span class="highlight-tag">Apple Middle East</span>
+                            <span class="highlight-tag">Arabic RTL Testing</span>
+                            <span class="highlight-tag">WPP Acquisition</span>
+                            <span class="highlight-tag">Global Brands</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-cta">
+                        <a href="prodigi_hogarth_portfolio.html" class="portfolio-button">
+                            🎨 Explore Digital Marketing QA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sapient Nitro Portfolio -->
+                <div class="portfolio-card sapient">
+                    <div class="portfolio-header">
+                        <span class="portfolio-period">March 2012 - August 2015</span>
+                        <h3 class="portfolio-company">Sapient Nitro</h3>
+                        <p class="portfolio-role">Senior Associate, QA</p>
+                        <p class="portfolio-description">
+                            Led strategic digital transformations for NASCAR.com and automotive data platforms, developing Cucumber/Gherkin automation frameworks during Sapient's recognition as Gartner Leaders.
+                        </p>
+                        <div class="portfolio-highlights">
+                            <span class="highlight-tag">NASCAR.com</span>
+                            <span class="highlight-tag">Adobe DayCQ</span>
+                            <span class="highlight-tag">JATO Automotive</span>
+                            <span class="highlight-tag">$10.94B Impact</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-cta">
+                        <a href="sapient_nitro_portfolio.html" class="portfolio-button">
+                            🏁 Explore Digital Transformation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Capital IQ Portfolio -->
+                <div class="portfolio-card capital-iq">
+                    <div class="portfolio-header">
+                        <span class="portfolio-period">May 2008 - March 2012</span>
+                        <h3 class="portfolio-company">Capital IQ (S&P Global)</h3>
+                        <p class="portfolio-role">Senior Technology Quality Analyst</p>
+                        <p class="portfolio-description">
+                            Pioneered QA engineering excellence during the 2008 financial crisis, architecting comprehensive QTP/UFT automation frameworks and establishing security testing protocols that enabled Capital IQ's transformation into the 4th largest financial data provider.
+                        </p>
+                        <div class="portfolio-highlights">
+                            <span class="highlight-tag">Crisis Engineering Leadership</span>
+                            <span class="highlight-tag">QTP/UFT Automation</span>
+                            <span class="highlight-tag">VBScript Frameworks</span>
+                            <span class="highlight-tag">Security Innovation</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-cta">
+                        <a href="capital_iq_portfolio.html" class="portfolio-button">
+                            💼 Explore Financial Services QA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Impetus Portfolio -->
+                <div class="portfolio-card impetus">
+                    <div class="portfolio-header">
+                        <span class="portfolio-period">July 2007 - January 2008</span>
+                        <h3 class="portfolio-company">Impetus Technologies</h3>
+                        <p class="portfolio-role">Trainee Software Engineer</p>
+                        <p class="portfolio-description">
+                            Foundational learning experience during the 2008 financial crisis through comprehensive Impetus University training, establishing the technical foundation for subsequent career success.
+                        </p>
+                        <div class="portfolio-highlights">
+                            <span class="highlight-tag">Java Foundation</span>
+                            <span class="highlight-tag">SDLC Training</span>
+                            <span class="highlight-tag">Crisis Resilience</span>
+                            <span class="highlight-tag">Career Foundation</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-cta">
+                        <a href="impetus_technologies_portfolio.html" class="portfolio-button">
+                            🎓 Explore Career Foundation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="section-container">
+            <h2 class="contact-title">Let's Connect</h2>
+            <p class="contact-description">
+                Ready to discuss how my QA leadership experience can drive your organization's digital transformation and quality excellence initiatives?
+            </p>
+            <div class="contact-buttons">
+                <a href="mailto:ankitrathi85@gmail.com" class="contact-button">
+                    📧 Email Me
+                </a>
+                <a href="https://linkedin.com/in/ankitrathi85" target="_blank" class="contact-button secondary">
+                    💼 LinkedIn Profile
+                </a>
+                <a href="https://ankitrathi85.github.io/ankitrathi/" target="_blank" class="contact-button secondary">
+                    📄 Resume
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

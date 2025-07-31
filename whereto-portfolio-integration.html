@@ -1,0 +1,743 @@
+<!-- Add this CSS to your existing <style> section -->
+<style>
+/* WhereTo Enterprise QA Leadership Section */
+.qa-leadership-showcase {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.qa-leadership-showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="30" cy="30" r="4"/></g></svg>');
+    animation: float 20s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translateX(0px) translateY(0px); }
+    100% { transform: translateX(-60px) translateY(-60px); }
+}
+
+.showcase-content {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.showcase-title {
+    font-size: 2.8rem;
+    color: #2d3748;
+    margin-bottom: 15px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.showcase-subtitle {
+    font-size: 1.3rem;
+    color: #718096;
+    margin-bottom: 20px;
+}
+
+.executive-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Executive Metrics Grid */
+.executive-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.executive-metric-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-top: 4px solid #667eea;
+    position: relative;
+}
+
+.executive-metric-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.executive-metric-card.scale { border-top-color: #e53e3e; }
+.executive-metric-card.process { border-top-color: #48bb78; }
+.executive-metric-card.tech { border-top-color: #667eea; }
+.executive-metric-card.business { border-top-color: #ed8936; }
+
+.metric-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.metric-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.metric-label {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* Organizational Architecture */
+.org-architecture {
+    margin: 50px 0;
+}
+
+.architecture-title {
+    text-align: center;
+    color: #2d3748;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.team-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.team-card.core { border-left-color: #667eea; }
+.team-card.strategic { border-left-color: #48bb78; }
+.team-card.specialized { border-left-color: #e53e3e; }
+
+.team-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.team-icon {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.team-card.strategic .team-icon {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+}
+
+.team-card.specialized .team-icon {
+    background: linear-gradient(135deg, #e53e3e, #c53030);
+}
+
+.team-name {
+    color: #2d3748;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.team-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.capabilities-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.capabilities-list li {
+    background: #f8f9fa;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #555;
+    border-left: 3px solid #667eea;
+}
+
+/* Strategic Frameworks Section */
+.frameworks-section {
+    background: linear-gradient(135deg, #f8f9fa, #e8f2ff);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.frameworks-title {
+    text-align: center;
+    color: #2d3748;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.frameworks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.framework-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #667eea;
+}
+
+.framework-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.framework-icon {
+    background: #667eea;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    font-size: 1rem;
+}
+
+.framework-name {
+    color: #2d3748;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.framework-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.framework-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.feature-tag {
+    background: #e8f2ff;
+    color: #667eea;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Technology Stack */
+.tech-ecosystem {
+    margin: 40px 0;
+}
+
+.tech-title {
+    text-align: center;
+    color: #2d3748;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.tech-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tech-category {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #667eea;
+}
+
+.tech-category-title {
+    color: #2d3748;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tech-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tech-tool {
+    background: #f8f9fa;
+    color: #555;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    border: 1px solid #e2e8f0;
+}
+
+/* Results & Impact */
+.results-section {
+    background: white;
+    border-radius: 15px;
+    padding: 35px;
+    margin: 40px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.results-title {
+    text-align: center;
+    color: #2d3748;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.impact-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.impact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.impact-metric {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 8px;
+}
+
+.impact-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .showcase-content {
+        padding: 30px 20px;
+    }
+    
+    .showcase-title {
+        font-size: 2.2rem;
+    }
+    
+    .executive-metrics {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .teams-grid,
+    .frameworks-grid,
+    .tech-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .metric-number {
+        font-size: 2rem;
+    }
+}
+</style>
+
+<!-- Add this HTML section after your Experience section and before Skills section -->
+<section class="qa-leadership-showcase">
+    <div class="container">
+        <div class="showcase-content">
+            <div class="showcase-header">
+                <h2 class="showcase-title">Head of QA at WhereTo</h2>
+                <p class="showcase-subtitle">Building and scaling a world-class quality assurance organization for global travel technology</p>
+                <div class="executive-badge">Head of QA | April 2022 - June 2025</div>
+                <p style="color: #666; font-size: 1rem; max-width: 800px; margin: 0 auto;">Led enterprise-scale QA transformation across 8 specialized Scrum teams, establishing industry-leading quality standards and automation frameworks for a global travel platform serving thousands of corporate clients worldwide.</p>
+            </div>
+
+            <!-- Executive-Level Metrics -->
+            <div class="executive-metrics">
+                <div class="executive-metric-card scale">
+                    <span class="metric-icon">🏢</span>
+                    <span class="metric-number">8+</span>
+                    <span class="metric-label">Specialized Scrum Teams Led</span>
+                </div>
+                <div class="executive-metric-card scale">
+                    <span class="metric-icon">👥</span>
+                    <span class="metric-number">25+</span>
+                    <span class="metric-label">QA Engineers Managed</span>
+                </div>
+                <div class="executive-metric-card process">
+                    <span class="metric-icon">📊</span>
+                    <span class="metric-number">40+</span>
+                    <span class="metric-label">Business Processes Covered</span>
+                </div>
+                <div class="executive-metric-card tech">
+                    <span class="metric-icon">🛠️</span>
+                    <span class="metric-number">15+</span>
+                    <span class="metric-label">Enterprise Tools Managed</span>
+                </div>
+                <div class="executive-metric-card business">
+                    <span class="metric-icon">🌍</span>
+                    <span class="metric-number">8</span>
+                    <span class="metric-label">Business Domains Covered</span>
+                </div>
+                <div class="executive-metric-card process">
+                    <span class="metric-icon">⚡</span>
+                    <span class="metric-number">3</span>
+                    <span class="metric-label">Strategic Frameworks Built</span>
+                </div>
+            </div>
+
+            <!-- Organizational Architecture -->
+            <div class="org-architecture">
+                <h3 class="architecture-title">🏗️ QA Organizational Architecture</h3>
+                
+                <!-- Core Business Teams -->
+                <h4 style="color: #2d3748; margin: 30px 0 20px 0; font-size: 1.3rem;">Core Business Domain Teams</h4>
+                <div class="teams-grid">
+                    <div class="team-card core">
+                        <div class="team-header">
+                            <div class="team-icon">✈️</div>
+                            <h5 class="team-name">Flight Integration & Content</h5>
+                        </div>
+                        <p class="team-description">Core booking engine quality and content management</p>
+                        <ul class="capabilities-list">
+                            <li>Flight Integration QA</li>
+                            <li>Backend integration and data consistency</li>
+                            <li>Content validation and supplier integration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="team-card core">
+                        <div class="team-header">
+                            <div class="team-icon">🔍</div>
+                            <h5 class="team-name">Flight Shopping & UX</h5>
+                        </div>
+                        <p class="team-description">Customer-facing flight search and booking experience</p>
+                        <ul class="capabilities-list">
+                            <li>User interface optimization and conversion</li>
+                            <li>Air modifications and seat selection</li>
+                            <li>Search performance and accuracy</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="team-card core">
+                        <div class="team-header">
+                            <div class="team-icon">🚂</div>
+                            <h5 class="team-name">Rail & Cars</h5>
+                        </div>
+                        <p class="team-description">Ground transportation booking platforms</p>
+                        <ul class="capabilities-list">
+                            <li>Multi-supplier integration (UK, EMEA, NORAM)</li>
+                            <li>Split ticketing and cost optimization</li>
+                            <li>Cross-modal transportation testing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="team-card core">
+                        <div class="team-header">
+                            <div class="team-icon">🏨</div>
+                            <h5 class="team-name">Hotels</h5>
+                        </div>
+                        <p class="team-description">Accommodation booking and rate management</p>
+                        <ul class="capabilities-list">
+                            <li>Multi-supplier hotel content and pricing</li>
+                            <li>Hotel search enhancements</li>
+                            <li>Rate management and modifications</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="team-card core">
+                        <div class="team-header">
+                            <div class="team-icon">📱</div>
+                            <h5 class="team-name">Mobile</h5>
+                        </div>
+                        <p class="team-description">Native iOS and Android applications</p>
+                        <ul class="capabilities-list">
+                            <li>Cross-platform testing</li>
+                            <li>Device compatibility</li>
+                            <li>Mobile-specific user experience</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="team-card core">
+                        <div class="team-header">
+                            <div class="team-icon">⚙️</div>
+                            <h5 class="team-name">Admin</h5>
+                        </div>
+                        <p class="team-description">Platform administration and configuration</p>
+                        <ul class="capabilities-list">
+                            <li>Business rules and approval workflows</li>
+                            <li>User management and permissions</li>
+                            <li>System configuration testing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="team-card core">
+                        <div class="team-header">
+                            <div class="team-icon">👤</div>
+                            <h5 class="team-name">Traveller</h5>
+                        </div>
+                        <p class="team-description">End-user traveller portal and experience</p>
+                        <ul class="capabilities-list">
+                            <li>User onboarding and profile management</li>
+                            <li>Travel invites and booking flows</li>
+                            <li>Traveller portal functionality</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="team-card core">
+                        <div class="team-header">
+                            <div class="team-icon">📋</div>
+                            <h5 class="team-name">Arranger</h5>
+                        </div>
+                        <p class="team-description">Trip planning and proposal management tools</p>
+                        <ul class="capabilities-list">
+                            <li>Complex itinerary creation</li>
+                            <li>Business travel arrangement workflows</li>
+                            <li>Approval and proposal management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Strategic & Specialized Teams -->
+                <h4 style="color: #2d3748; margin: 40px 0 20px 0; font-size: 1.3rem;">Strategic & Specialized Teams</h4>
+                <div class="teams-grid">
+                    <div class="team-card strategic">
+                        <div class="team-header">
+                            <div class="team-icon">🎯</div>
+                            <h5 class="team-name">Center of Excellence (COE)</h5>
+                        </div>
+                        <p class="team-description">Strategic QA leadership and standardization</p>
+                        <ul class="capabilities-list">
+                            <li>Automation Strategy & Framework Development</li>
+                            <li>Quality Standards & Governance</li>
+                            <li>AI Implementation Strategy</li>
+                            <li>Best Practices & Training</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="team-card specialized">
+                        <div class="team-header">
+                            <div class="team-icon">🔗</div>
+                            <h5 class="team-name">Integration QA Team</h5>
+                        </div>
+                        <p class="team-description">Specialized travel industry integrations</p>
+                        <ul class="capabilities-list">
+                            <li>GDS Integration (Amadeus, Sabre, Travelport)</li>
+                            <li>Supplier Management & Booking Procedures</li>
+                            <li>Revenue Management & PNR Operations</li>
+                            <li>Enterprise Integration Testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Frameworks -->
+            <div class="frameworks-section">
+                <h3 class="frameworks-title">🎯 Strategic Frameworks & Processes Developed</h3>
+                <div class="frameworks-grid">
+                    <div class="framework-card">
+                        <div class="framework-header">
+                            <div class="framework-icon">🚀</div>
+                            <h5 class="framework-name">JET Automation Framework</h5>
+                        </div>
+                        <p class="framework-description">Next-generation test automation framework with enterprise scalability and maintainability</p>
+                        <div class="framework-features">
+                            <span class="feature-tag">WebDriverIO</span>
+                            <span class="feature-tag">Mocha</span>
+                            <span class="feature-tag">CI/CD Integration</span>
+                            <span class="feature-tag">Cross-Platform</span>
+                        </div>
+                    </div>
+                    
+                    <div class="framework-card">
+                        <div class="framework-header">
+                            <div class="framework-icon">📊</div>
+                            <h5 class="framework-name">RADAR Framework</h5>
+                        </div>
+                        <p class="framework-description">Test maturity assessment framework for evaluating and improving QA practices across teams</p>
+                        <div class="framework-features">
+                            <span class="feature-tag">Maturity Model</span>
+                            <span class="feature-tag">Analytics</span>
+                            <span class="feature-tag">Scoring System</span>
+                            <span class="feature-tag">Continuous Improvement</span>
+                        </div>
+                    </div>
+                    
+                    <div class="framework-card">
+                        <div class="framework-header">
+                            <div class="framework-icon">🏆</div>
+                            <h5 class="framework-name">Comprehensive QA Processes</h5>
+                        </div>
+                        <p class="framework-description">Enterprise-grade processes covering entire software development lifecycle</p>
+                        <div class="framework-features">
+                            <span class="feature-tag">Sprint Management</span>
+                            <span class="feature-tag">Release Coordination</span>
+                            <span class="feature-tag">Risk Management</span>
+                            <span class="feature-tag">Production Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Ecosystem -->
+            <div class="tech-ecosystem">
+                <h3 class="tech-title">🛠️ Enterprise Technology Ecosystem</h3>
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <h5 class="tech-category-title">🧪 Test Management</h5>
+                        <div class="tech-tools">
+                            <span class="tech-tool">Zephyr</span>
+                            <span class="tech-tool">BrowserStack</span>
+                            <span class="tech-tool">Test Observability</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h5 class="tech-category-title">✈️ Travel Industry Systems</h5>
+                        <div class="tech-tools">
+                            <span class="tech-tool">Amadeus GDS</span>
+                            <span class="tech-tool">Sabre RED</span>
+                            <span class="tech-tool">TPConnects</span>
+                            <span class="tech-tool">Travelport</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h5 class="tech-category-title">📊 Monitoring & Analytics</h5>
+                        <div class="tech-tools">
+                            <span class="tech-tool">Kibana/LogStash</span>
+                            <span class="tech-tool">LogRocket</span>
+                            <span class="tech-tool">Custom Dashboards</span>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h5 class="tech-category-title">🔧 DevOps & Tools</h5>
+                        <div class="tech-tools">
+                            <span class="tech-tool">Paved Road Tooling</span>
+                            <span class="tech-tool">FlagSmith</span>
+                            <span class="tech-tool">Wireshark</span>
+                            <span class="tech-tool">VPN Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Impact Results -->
+            <div class="results-section">
+                <h3 class="results-title">🎯 Measurable Business Impact</h3>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <span class="impact-icon">📈</span>
+                        <div class="impact-metric">Enterprise Scale</div>
+                        <p class="impact-description">Built QA organization supporting 6,000+ corporate clients across 95+ countries</p>
+                    </div>
+                    <div class="impact-item">
+                        <span class="impact-icon">⚡</span>
+                        <div class="impact-metric">100+ Sprints</div>
+                        <p class="impact-description">Successfully delivered with zero critical production issues</p>
+                    </div>
+                    <div class="impact-item">
+                        <span class="impact-icon">🤖</span>
+                        <div class="impact-metric">76% Coverage</div>
+                        <p class="impact-description">Automation coverage achieved across 400+ test cases regression suite</p>
+                    </div>
+                    <div class="impact-item">
+                        <span class="impact-icon">💰</span>
+                        <div class="impact-metric">$18K+ Savings</div>
+                        <p class="impact-description">Per-client cost optimization through quality-assured platform features</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div style="text-align: center; margin: 40px 0 20px; padding: 30px; background: linear-gradient(135deg, #f8f9fa, #e8f2ff); border-radius: 15px;">
+                <h4 style="color: #2d3748; margin-bottom: 15px;">📋 Interested in Learning More?</h4>
+                <p style="color: #666; margin-bottom: 25px;">Contact me to discuss my QA leadership experience and technical frameworks in detail</p>
+                <a href="mailto:ankitrathi85@gmail.com" 
+                   style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; text-decoration: none; padding: 15px 35px; border-radius: 25px; font-weight: 600; display: inline-block; margin: 10px; transition: all 0.3s ease;">
+                    📧 Email Me
+                </a>
+                <a href="https://linkedin.com/in/ankitrathi85" target="_blank" 
+                   style="background: white; color: #667eea; border: 2px solid #667eea; text-decoration: none; padding: 13px 33px; border-radius: 25px; font-weight: 600; display: inline-block; margin: 10px; transition: all 0.3s ease;">
+                    💼 LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

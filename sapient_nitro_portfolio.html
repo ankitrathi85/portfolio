@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior QA Associate at Sapient Nitro</title>
+    <style>
+        /* Sapient Nitro QA Leadership Section */
+        .sapient-leadership-showcase {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 50%, #7f1d1d 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sapient-leadership-showcase::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.04"><polygon points="40,20 60,35 60,65 40,80 20,65 20,35"/><polygon points="10,5 20,10 20,20 10,25 0,20 0,10"/><polygon points="70,55 80,60 80,70 70,75 60,70 60,60"/></g></svg>');
+            animation: tech-slide 35s infinite linear;
+        }
+
+        @keyframes tech-slide {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-80px, -80px) rotate(360deg); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .sapient-showcase-content {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 60px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .sapient-showcase-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .sapient-showcase-title {
+            font-size: 3rem;
+            color: #1e293b;
+            margin-bottom: 20px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #dc2626, #991b1b, #1f2937);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .sapient-showcase-subtitle {
+            font-size: 1.4rem;
+            color: #64748b;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .sapient-executive-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #1f2937, #374151);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 35px;
+            box-shadow: 0 8px 25px rgba(31, 41, 55, 0.3);
+        }
+
+        /* Career Progression Timeline */
+        .sapient-career-progression {
+            background: linear-gradient(135deg, #fef3c7, #fed7aa);
+            border-radius: 25px;
+            padding: 50px;
+            margin: 60px 0;
+            border-left: 6px solid #f59e0b;
+        }
+
+        .sapient-progression-title {
+            text-align: center;
+            color: #92400e;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .sapient-progression-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            position: relative;
+        }
+
+        .sapient-progression-role {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid #dc2626;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .sapient-progression-role:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .sapient-progression-role.level2 { border-left-color: #059669; }
+
+        .sapient-role-period {
+            background: #dc2626;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .sapient-progression-role.level2 .sapient-role-period { background: #059669; }
+
+        .sapient-role-title {
+            color: #1e293b;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .sapient-role-achievements {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sapient-role-achievements li {
+            background: #f1f5f9;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            color: #475569;
+            border-left: 4px solid #dc2626;
+            line-height: 1.5;
+        }
+
+        .sapient-progression-role.level2 .sapient-role-achievements li {
+            border-left-color: #059669;
+        }
+
+        /* Executive-Level Metrics */
+        .sapient-executive-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .sapient-executive-metric-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-top: 5px solid #dc2626;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sapient-executive-metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #dc2626, #991b1b, #7f1d1d);
+        }
+
+        .sapient-executive-metric-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .sapient-executive-metric-card.nascar { border-top-color: #1f2937; }
+        .sapient-executive-metric-card.nascar::before { background: linear-gradient(90deg, #1f2937, #374151); }
+        .sapient-executive-metric-card.automation { border-top-color: #7c3aed; }
+        .sapient-executive-metric-card.automation::before { background: linear-gradient(90deg, #7c3aed, #6d28d9); }
+        .sapient-executive-metric-card.testing { border-top-color: #059669; }
+        .sapient-executive-metric-card.testing::before { background: linear-gradient(90deg, #059669, #047857); }
+        .sapient-executive-metric-card.automotive { border-top-color: #ea580c; }
+        .sapient-executive-metric-card.automotive::before { background: linear-gradient(90deg, #ea580c, #c2410c); }
+
+        .sapient-metric-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .sapient-metric-number {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #1e293b;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .sapient-metric-label {
+            color: #64748b;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        /* NASCAR Project Section */
+        .nascar-project-section {
+            background: linear-gradient(135deg, #1f2937, #111827);
+            border-radius: 25px;
+            padding: 50px;
+            margin: 60px 0;
+            color: white;
+        }
+
+        .nascar-section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .nascar-impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .nascar-impact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .nascar-impact-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .nascar-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+
+        .nascar-card-icon {
+            font-size: 2rem;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .nascar-card-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .nascar-card-description {
+            color: #d1d5db;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .nascar-achievement-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .nascar-achievement-tag {
+            background: rgba(220, 38, 38, 0.3);
+            color: #fecaca;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* JATO Project Section */
+        .jato-project-section {
+            margin: 60px 0;
+        }
+
+        .jato-section-title {
+            text-align: center;
+            color: #1e293b;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .jato-impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .jato-impact-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #ea580c;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .jato-impact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #ea580c, #c2410c);
+        }
+
+        .jato-impact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .jato-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .jato-card-icon {
+            background: linear-gradient(135deg, #ea580c, #c2410c);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+        }
+
+        .jato-card-title {
+            color: #1e293b;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .jato-card-description {
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .jato-feature-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .jato-feature-tag {
+            background: #fff7ed;
+            color: #c2410c;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Automation Framework Section */
+        .automation-framework-section {
+            margin: 60px 0;
+        }
+
+        .automation-framework-title {
+            text-align: center;
+            color: #1e293b;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .automation-framework-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .automation-framework-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #7c3aed;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .automation-framework-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #7c3aed, #6d28d9);
+        }
+
+        .automation-framework-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .automation-framework-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .automation-framework-icon {
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+        }
+
+        .automation-framework-name {
+            color: #1e293b;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .automation-framework-description {
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .automation-framework-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .automation-feature-tag {
+            background: #f3e8ff;
+            color: #7c3aed;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Technology Stack */
+        .sapient-tech-ecosystem {
+            margin: 60px 0;
+        }
+
+        .sapient-tech-title {
+            text-align: center;
+            color: #1e293b;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .sapient-tech-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .sapient-tech-category {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #dc2626;
+            transition: all 0.3s ease;
+        }
+
+        .sapient-tech-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .sapient-tech-category-title {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .sapient-tech-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .sapient-tech-tool {
+            background: #fef2f2;
+            color: #991b1b;
+            padding: 8px 14px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #fecaca;
+            transition: all 0.2s ease;
+        }
+
+        .sapient-tech-tool:hover {
+            background: #fecaca;
+            color: #7f1d1d;
+        }
+
+        /* Strategic Impact */
+        .sapient-strategic-impact {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border-radius: 25px;
+            padding: 50px;
+            margin: 60px 0;
+        }
+
+        .sapient-impact-title {
+            text-align: center;
+            color: #0c4a6e;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .sapient-impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .sapient-impact-item {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 2px solid #bae6fd;
+        }
+
+        .sapient-impact-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .sapient-impact-metric {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #0c4a6e;
+            margin-bottom: 10px;
+        }
+
+        .sapient-impact-description {
+            color: #475569;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Call to Action */
+        .sapient-cta {
+            text-align: center;
+            margin: 60px 0 40px;
+            padding: 40px;
+            background: linear-gradient(135deg, #fef3c7, #fde68a);
+            border-radius: 20px;
+            border: 1px solid #f59e0b;
+        }
+
+        .sapient-cta h4 {
+            color: #92400e;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .sapient-cta p {
+            color: #78350f;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .sapient-cta-button {
+            background: linear-gradient(135deg, #dc2626, #991b1b);
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 30px;
+            font-weight: 700;
+            display: inline-block;
+            margin: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+        }
+
+        .sapient-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(220, 38, 38, 0.4);
+        }
+
+        .sapient-cta-button.secondary {
+            background: white;
+            color: #dc2626;
+            border: 2px solid #dc2626;
+        }
+
+        .sapient-cta-button.secondary:hover {
+            background: #dc2626;
+            color: white;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .sapient-showcase-content {
+                padding: 40px 25px;
+            }
+            
+            .sapient-showcase-title {
+                font-size: 2.5rem;
+            }
+            
+            .sapient-executive-metrics {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .sapient-progression-timeline,
+            .automation-framework-grid,
+            .sapient-tech-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .sapient-metric-number {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="sapient-leadership-showcase">
+        <div class="container">
+            <div class="sapient-showcase-content">
+                <div class="sapient-showcase-header">
+                    <h2 class="sapient-showcase-title">Senior Associate, QA</h2>
+                    <p class="sapient-showcase-subtitle">Leading strategic digital transformations for NASCAR.com and automotive data platforms during Sapient Nitro's rise as a global digital agency leader</p>
+                    <div class="sapient-executive-badge">Sapient Nitro | March 26, 2012 - August 28, 2015</div>
+                    <p style="color: #64748b; font-size: 1.1rem; max-width: 900px; margin: 0 auto; line-height: 1.6;">Spearheaded quality assurance for landmark digital transformation projects including NASCAR.com's Adobe DayCQ migration that rescued America's premier motorsport from digital irrelevance, and automotive data platform modernization for UK-based JATO Dynamics. Established comprehensive Selenium automation frameworks with Cucumber/Gherkin for race day verifications, led cross-functional QA teams, and drove continuous testing integration during Sapient Nitro's recognition as Gartner Leaders quadrant agency for four consecutive years.</p>
+                </div>
+
+                <!-- Career Progression -->
+                <div class="sapient-career-progression">
+                    <h3 class="sapient-progression-title">🚀 Strategic QA Leadership Evolution</h3>
+                    <div class="sapient-progression-timeline">
+                        <div class="sapient-progression-role">
+                            <div class="sapient-role-period">Mar 2012 - Dec 2014</div>
+                            <h4 class="sapient-role-title">Senior Associate, QA Level 1</h4>
+                            <ul class="sapient-role-achievements">
+                                <li>Set up comprehensive Test Automation Framework using Selenium Remote WebDriver in Selenium Grid with TestNG</li>
+                                <li>Led Automation and Manual QA teams, driving technical estimations and strategic guidance</li>
+                                <li>Executed specialized SEO, security, and accessibility testing using WCAG 2.0 guidelines</li>
+                                <li>Integrated continuous testing capabilities using Jenkins for NASCAR.com platform</li>
+                                <li>Led functional and data testing design and review processes for Adobe DayCQ migration</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sapient-progression-role level2">
+                            <div class="sapient-role-period">Jan 2015 - Aug 2015</div>
+                            <h4 class="sapient-role-title">Senior Associate, QA Level 2</h4>
+                            <ul class="sapient-role-achievements">
+                                <li>Advanced automation framework development and optimization for automotive data platforms</li>
+                                <li>Senior-level team leadership providing technical guidance across multiple projects</li>
+                                <li>Developed comprehensive test cases, test plans, execution strategies, and defect tracking systems</li>
+                                <li>Pioneered mobile website testing and localization testing capabilities</li>
+                                <li>Mentoring and training of junior QA team members in advanced testing methodologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Executive-Level Metrics -->
+                <div class="sapient-executive-metrics">
+                    <div class="sapient-executive-metric-card nascar">
+                        <span class="sapient-metric-icon">🏁</span>
+                        <span class="sapient-metric-number">1.3TB</span>
+                        <span class="sapient-metric-label">NASCAR Race Data Tested</span>
+                    </div>
+                    <div class="sapient-executive-metric-card automation">
+                        <span class="sapient-metric-icon">🤖</span>
+                        <span class="sapient-metric-number">100+</span>
+                        <span class="sapient-metric-label">Cucumber/Gherkin Scenarios</span>
+                    </div>
+                    <div class="sapient-executive-metric-card testing">
+                        <span class="sapient-metric-icon">⚡</span>
+                        <span class="sapient-metric-number">50K+</span>
+                        <span class="sapient-metric-label">Concurrent Users Tested</span>
+                    </div>
+                    <div class="sapient-executive-metric-card automotive">
+                        <span class="sapient-metric-icon">🚗</span>
+                        <span class="sapient-metric-number">250M+</span>
+                        <span class="sapient-metric-label">Auto Data Points Validated</span>
+                    </div>
+                    <div class="sapient-executive-metric-card nascar">
+                        <span class="sapient-metric-icon">📱</span>
+                        <span class="sapient-metric-number">15-20</span>
+                        <span class="sapient-metric-label">Minutes Race-to-Web Testing</span>
+                    </div>
+                    <div class="sapient-executive-metric-card automation">
+                        <span class="sapient-metric-icon">🔍</span>
+                        <span class="sapient-metric-number">95%</span>
+                        <span class="sapient-metric-label">Automated Test Coverage</span>
+                    </div>
+                    <div class="sapient-executive-metric-card testing">
+                        <span class="sapient-metric-icon">🏆</span>
+                        <span class="sapient-metric-number">4</span>
+                        <span class="sapient-metric-label">Gartner Leaders Years</span>
+                    </div>
+                    <div class="sapient-executive-metric-card automotive">
+                        <span class="sapient-metric-icon">🌍</span>
+                        <span class="sapient-metric-number">50+</span>
+                        <span class="sapient-metric-label">Global Markets Tested</span>
+                    </div>
+                </div>
+
+                <!-- NASCAR Project Section -->
+                <div class="nascar-project-section">
+                    <h3 class="nascar-section-title">
+                        <span>🏁</span>
+                        NASCAR.com Digital Transformation & Adobe DayCQ Migration
+                    </h3>
+                    <div class="nascar-impact-grid">
+                        <div class="nascar-impact-card">
+                            <div class="nascar-card-header">
+                                <div class="nascar-card-icon">🎯</div>
+                                <h5 class="nascar-card-title">Race Day Automation Excellence</h5>
+                            </div>
+                            <p class="nascar-card-description">Developed comprehensive Cucumber/Gherkin-based Selenium Java test automation framework for critical race day verifications, ensuring NASCAR.com could handle real-time data processing within 15-20 minutes from track to website during peak traffic events like Daytona 500.</p>
+                            <div class="nascar-achievement-tags">
+                                <span class="nascar-achievement-tag">Cucumber BDD Framework</span>
+                                <span class="nascar-achievement-tag">Gherkin Scenarios</span>
+                                <span class="nascar-achievement-tag">Real-time Validation</span>
+                                <span class="nascar-achievement-tag">Race Day Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="nascar-impact-card">
+                            <div class="nascar-card-header">
+                                <div class="nascar-card-icon">⚡</div>
+                                <h5 class="nascar-card-title">High-Traffic Load Validation</h5>
+                            </div>
+                            <p class="nascar-card-description">Orchestrated comprehensive load testing for tens of thousands of concurrent users during major races, validating Adobe DayCQ platform performance under extreme traffic scenarios while processing 1.3TB of race data with 100+ data points per race.</p>
+                            <div class="nascar-achievement-tags">
+                                <span class="nascar-achievement-tag">Load Testing</span>
+                                <span class="nascar-achievement-tag">Adobe DayCQ</span>
+                                <span class="nascar-achievement-tag">Traffic Scalability</span>
+                                <span class="nascar-achievement-tag">Performance Validation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="nascar-impact-card">
+                            <div class="nascar-card-header">
+                                <div class="nascar-card-icon">🔄</div>
+                                <h5 class="nascar-card-title">Content Migration & Platform Cutover</h5>
+                            </div>
+                            <p class="nascar-card-description">Led critical QA validation for NASCAR's complete digital independence from Turner Sports, testing content migration of years of archived NASCAR.com history and ensuring seamless platform cutover that launched January 3, 2013.</p>
+                            <div class="nascar-achievement-tags">
+                                <span class="nascar-achievement-tag">Content Migration</span>
+                                <span class="nascar-achievement-tag">Platform Cutover</span>
+                                <span class="nascar-achievement-tag">Data Integrity</span>
+                                <span class="nascar-achievement-tag">Go-Live Support</span>
+                            </div>
+                        </div>
+                        
+                        <div class="nascar-impact-card">
+                            <div class="nascar-card-header">
+                                <div class="nascar-card-icon">📱</div>
+                                <h5 class="nascar-card-title">Multi-Channel Experience Validation</h5>
+                            </div>
+                            <p class="nascar-card-description">Established comprehensive testing protocols for NASCAR's integrated digital experience across web, mobile, and tablet devices, supporting fan engagement initiatives that contributed to securing $10.94 billion broadcast contracts for 2015-2024.</p>
+                            <div class="nascar-achievement-tags">
+                                <span class="nascar-achievement-tag">Cross-Platform Testing</span>
+                                <span class="nascar-achievement-tag">Mobile Optimization</span>
+                                <span class="nascar-achievement-tag">Fan Engagement</span>
+                                <span class="nascar-achievement-tag">Revenue Impact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JATO Automotive Project Section -->
+                <div class="jato-project-section">
+                    <h3 class="jato-section-title">🚗 JATO Automotive Data Platform Modernization</h3>
+                    <div class="jato-impact-grid">
+                        <div class="jato-impact-card">
+                            <div class="jato-card-header">
+                                <div class="jato-card-icon">📊</div>
+                                <h5 class="jato-card-title">Massive Data Volume Validation</h5>
+                            </div>
+                            <div class="jato-card-description">Orchestrated comprehensive testing for automotive data platform processing 250+ million live vehicle data points across 50+ global markets, ensuring data integrity and performance during platform modernization initiatives.</div>
+                            <div class="jato-feature-tags">
+                                <span class="jato-feature-tag">Big Data Testing</span>
+                                <span class="jato-feature-tag">Data Integrity</span>
+                                <span class="jato-feature-tag">Global Markets</span>
+                                <span class="jato-feature-tag">Performance Validation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="jato-impact-card">
+                            <div class="jato-card-header">
+                                <div class="jato-card-icon">⚡</div>
+                                <h5 class="jato-card-title">Real-Time Stream Processing</h5>
+                            </div>
+                            <div class="jato-card-description">Developed specialized testing frameworks for validating ultra-high throughput automotive data streams processing 612,000+ messages per second, ensuring platform readiness for emerging connected vehicle technologies.</div>
+                            <div class="jato-feature-tags">
+                                <span class="jato-feature-tag">Stream Processing</span>
+                                <span class="jato-feature-tag">High Throughput</span>
+                                <span class="jato-feature-tag">Connected Vehicles</span>
+                                <span class="jato-feature-tag">Real-time Validation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="jato-impact-card">
+                            <div class="jato-card-header">
+                                <div class="jato-card-icon">🔄</div>
+                                <h5 class="jato-card-title">ETL & Data Pipeline Testing</h5>
+                            </div>
+                            <div class="jato-card-description">Established comprehensive ETL testing processes for automotive data aggregation platform, validating complex data transformations and ensuring accuracy across distributed global automotive data ecosystems.</div>
+                            <div class="jato-feature-tags">
+                                <span class="jato-feature-tag">ETL Testing</span>
+                                <span class="jato-feature-tag">Data Pipelines</span>
+                                <span class="jato-feature-tag">Data Transformation</span>
+                                <span class="jato-feature-tag">Quality Assurance</span>
+                            </div>
+                        </div>
+                        
+                        <div class="jato-impact-card">
+                            <div class="jato-card-header">
+                                <div class="jato-card-icon">🌍</div>
+                                <h5 class="jato-card-title">Global Automotive Intelligence</h5>
+                            </div>
+                            <div class="jato-card-description">Supported quality validation for platform serving automotive manufacturers, dealerships, and industry analysts across 50+ markets, contributing to JATO's position in the rapidly growing automotive data analytics market.</div>
+                            <div class="jato-feature-tags">
+                                <span class="jato-feature-tag">Global Platform</span>
+                                <span class="jato-feature-tag">Market Intelligence</span>
+                                <span class="jato-feature-tag">Industry Analysis</span>
+                                <span class="jato-feature-tag">Business Impact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automation Framework Section -->
+                <div class="automation-framework-section">
+                    <h3 class="automation-framework-title">🤖 Advanced Test Automation Framework Development</h3>
+                    <div class="automation-framework-grid">
+                        <div class="automation-framework-card">
+                            <div class="automation-framework-header">
+                                <div class="automation-framework-icon">🕷️</div>
+                                <h5 class="automation-framework-name">Selenium Grid Architecture</h5>
+                            </div>
+                            <p class="automation-framework-description">Architected and implemented enterprise-scale Selenium Remote WebDriver framework utilizing Selenium Grid for distributed test execution across multiple browsers and operating systems, enabling parallel test execution for maximum efficiency.</p>
+                            <div class="automation-framework-features">
+                                <span class="automation-feature-tag">Selenium WebDriver</span>
+                                <span class="automation-feature-tag">Selenium Grid</span>
+                                <span class="automation-feature-tag">Parallel Execution</span>
+                                <span class="automation-feature-tag">Cross-Browser Testing</span>
+                                <span class="automation-feature-tag">Distributed Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="automation-framework-card">
+                            <div class="automation-framework-header">
+                                <div class="automation-framework-icon">🥒</div>
+                                <h5 class="automation-framework-name">Cucumber BDD Framework</h5>
+                            </div>
+                            <p class="automation-framework-description">Developed comprehensive Behavior-Driven Development framework using Cucumber and Gherkin for NASCAR race day scenarios, enabling business stakeholders to understand and validate critical testing scenarios in plain English.</p>
+                            <div class="automation-framework-features">
+                                <span class="automation-feature-tag">Cucumber BDD</span>
+                                <span class="automation-feature-tag">Gherkin Syntax</span>
+                                <span class="automation-feature-tag">Business Readable Tests</span>
+                                <span class="automation-feature-tag">Race Day Scenarios</span>
+                                <span class="automation-feature-tag">Stakeholder Collaboration</span>
+                            </div>
+                        </div>
+                        
+                        <div class="automation-framework-card">
+                            <div class="automation-framework-header">
+                                <div class="automation-framework-icon">🔧</div>
+                                <h5 class="automation-framework-name">TestNG Integration Suite</h5>
+                            </div>
+                            <p class="automation-framework-description">Integrated TestNG framework for advanced test configuration, parallel execution, and comprehensive reporting capabilities, supporting data-driven testing and flexible test suite management for complex automotive data validation.</p>
+                            <div class="automation-framework-features">
+                                <span class="automation-feature-tag">TestNG Framework</span>
+                                <span class="automation-feature-tag">Data-Driven Testing</span>
+                                <span class="automation-feature-tag">Test Configuration</span>
+                                <span class="automation-feature-tag">Advanced Reporting</span>
+                                <span class="automation-feature-tag">Suite Management</span>
+                            </div>
+                        </div>
+                        
+                        <div class="automation-framework-card">
+                            <div class="automation-framework-header">
+                                <div class="automation-framework-icon">🔄</div>
+                                <h5 class="automation-framework-name">Jenkins CI/CD Integration</h5>
+                            </div>
+                            <p class="automation-framework-description">Established continuous testing integration using Jenkins for automated test execution during NASCAR.com deployment cycles, enabling rapid feedback and ensuring quality gates throughout the development process.</p>
+                            <div class="automation-framework-features">
+                                <span class="automation-feature-tag">Jenkins Integration</span>
+                                <span class="automation-feature-tag">Continuous Testing</span>
+                                <span class="automation-feature-tag">Automated Execution</span>
+                                <span class="automation-feature-tag">Quality Gates</span>
+                                <span class="automation-feature-tag">Deployment Pipeline</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Ecosystem */
+                <div class="sapient-tech-ecosystem">
+                    <h3 class="sapient-tech-title">💻 Comprehensive Technology & Testing Ecosystem</h3>
+                    <div class="sapient-tech-categories">
+                        <div class="sapient-tech-category">
+                            <h5 class="sapient-tech-category-title">🧪 Test Automation</h5>
+                            <div class="sapient-tech-tools">
+                                <span class="sapient-tech-tool">Selenium WebDriver</span>
+                                <span class="sapient-tech-tool">Selenium Grid</span>
+                                <span class="sapient-tech-tool">TestNG</span>
+                                <span class="sapient-tech-tool">Cucumber BDD</span>
+                                <span class="sapient-tech-tool">Gherkin</span>
+                                <span class="sapient-tech-tool">Java</span>
+                                <span class="sapient-tech-tool">Maven</span>
+                                <span class="sapient-tech-tool">Page Object Model</span>
+                            </div>
+                        </div>
+                        
+                        <div class="sapient-tech-category">
+                            <h5 class="sapient-tech-category-title">🏁 NASCAR Platform Testing</h5>
+                            <div class="sapient-tech-tools">
+                                <span class="sapient-tech-tool">Adobe DayCQ/AEM</span>
+                                <span class="sapient-tech-tool">Race Day Validation</span>
+                                <span class="sapient-tech-tool">Load Testing</span>
+                                <span class="sapient-tech-tool">Performance Testing</span>
+                                <span class="sapient-tech-tool">Content Migration</span>
+                                <span class="sapient-tech-tool">Real-time Data Processing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="sapient-tech-category">
+                            <h5 class="sapient-tech-category-title">🚗 Automotive Data Testing</h5>
+                            <div class="sapient-tech-tools">
+                                <span class="sapient-tech-tool">Big Data Validation</span>
+                                <span class="sapient-tech-tool">ETL Testing</span>
+                                <span class="sapient-tech-tool">Stream Processing</span>
+                                <span class="sapient-tech-tool">Data Pipeline Testing</span>
+                                <span class="sapient-tech-tool">Data Integrity Validation</span>
+                                <span class="sapient-tech-tool">Global Market Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="sapient-tech-category">
+                            <h5 class="sapient-tech-category-title">🔧 DevOps & CI/CD</h5>
+                            <div class="sapient-tech-tools">
+                                <span class="sapient-tech-tool">Jenkins</span>
+                                <span class="sapient-tech-tool">Continuous Testing</span>
+                                <span class="sapient-tech-tool">Automated Deployment</span>
+                                <span class="sapient-tech-tool">Quality Gates</span>
+                                <span class="sapient-tech-tool">Test Reporting</span>
+                                <span class="sapient-tech-tool">Build Integration</span>
+                            </div>
+                        </div>
+                        
+                        <div class="sapient-tech-category">
+                            <h5 class="sapient-tech-category-title">📱 Specialized Testing</h5>
+                            <div class="sapient-tech-tools">
+                                <span class="sapient-tech-tool">Mobile Website Testing</span>
+                                <span class="sapient-tech-tool">Accessibility Testing</span>
+                                <span class="sapient-tech-tool">WCAG 2.0 Guidelines</span>
+                                <span class="sapient-tech-tool">SEO Testing</span>
+                                <span class="sapient-tech-tool">Security Testing</span>
+                                <span class="sapient-tech-tool">Localization Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="sapient-tech-category">
+                            <h5 class="sapient-tech-category-title">📊 Test Management</h5>
+                            <div class="sapient-tech-tools">
+                                <span class="sapient-tech-tool">Test Planning</span>
+                                <span class="sapient-tech-tool">Test Case Design</span>
+                                <span class="sapient-tech-tool">Execution Strategies</span>
+                                <span class="sapient-tech-tool">Defect Tracking</span>
+                                <span class="sapient-tech-tool">Team Leadership</span>
+                                <span class="sapient-tech-tool">Technical Mentoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Impact */
+                <div class="sapient-strategic-impact">
+                    <h3 class="sapient-impact-title">🌟 Strategic Digital Transformation Impact</h3>
+                    <div class="sapient-impact-grid">
+                        <div class="sapient-impact-item">
+                            <span class="sapient-impact-icon">🏁</span>
+                            <div class="sapient-impact-metric">$10.94B</div>
+                            <p class="sapient-impact-description">NASCAR broadcast contract value secured through digital transformation success, with QA ensuring flawless platform performance</p>
+                        </div>
+                        <div class="sapient-impact-item">
+                            <span class="sapient-impact-icon">🚀</span>
+                            <div class="sapient-impact-metric">Digital Independence</div>
+                            <p class="sapient-impact-description">Enabled NASCAR's complete digital independence from Turner Sports through rigorous Adobe DayCQ migration testing</p>
+                        </div>
+                        <div class="sapient-impact-item">
+                            <span class="sapient-impact-icon">📈</span>
+                            <div class="sapient-impact-metric">23.02% CAGR</div>
+                            <p class="sapient-impact-description">Automotive data market growth rate supported through platform modernization and comprehensive data validation</p>
+                        </div>
+                        <div class="sapient-impact-item">
+                            <span class="sapient-impact-icon">🏆</span>
+                            <div class="sapient-impact-metric">Gartner Leaders</div>
+                            <p class="sapient-impact-description">Contributed to Sapient Nitro's four consecutive years in Gartner's Leaders quadrant for Global Digital Marketing Agencies</p>
+                        </div>
+                        <div class="sapient-impact-item">
+                            <span class="sapient-impact-icon">⚡</span>
+                            <div class="sapient-impact-metric">Real-Time Testing</div>
+                            <p class="sapient-impact-description">Pioneered race day automation ensuring 15-20 minute track-to-web data delivery during peak traffic events</p>
+                        </div>
+                        <div class="sapient-impact-item">
+                            <span class="sapient-impact-icon">🌍</span>
+                            <div class="sapient-impact-metric">Global Scale</div>
+                            <p class="sapient-impact-description">Validated automotive data platforms processing 250+ million data points across 50+ global markets</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="sapient-cta">
+                    <h4>🚀 Ready to Discuss Strategic Digital Transformation QA Leadership?</h4>
+                    <p>Let's explore how my experience in leading critical QA operations for NASCAR's digital transformation and automotive data platform modernization, developing comprehensive Cucumber/Gherkin Selenium automation frameworks for race day scenarios, establishing continuous testing integration during high-stakes platform migrations, driving quality assurance excellence at a Gartner Leaders quadrant agency, and enabling business-critical digital transformations that generated billions in revenue impact can accelerate your organization's quality transformation and strategic technology initiatives.</p>
+                    <a href="mailto:ankitrathi85@gmail.com" class="sapient-cta-button">
+                        📧 Connect via Email
+                    </a>
+                    <a href="https://linkedin.com/in/ankitrathi85" target="_blank" class="sapient-cta-button secondary">
+                        💼 View LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

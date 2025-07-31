@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital IQ Technology Quality Leadership</title>
+    <style>
+        /* Capital IQ Quality Leadership Section */
+        .capitaliq-leadership-showcase {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .capitaliq-leadership-showcase::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.04"><circle cx="40" cy="40" r="20"/><rect width="15" height="15" x="10" y="10"/><rect width="15" height="15" x="55" y="55"/></g></svg>');
+            animation: financial-pulse 30s infinite linear;
+        }
+
+        @keyframes financial-pulse {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-40px, -40px) scale(1.1); }
+            100% { transform: translate(-80px, -80px) scale(1); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .capitaliq-showcase-content {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 60px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .capitaliq-showcase-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .capitaliq-showcase-title {
+            font-size: 3rem;
+            color: #1e293b;
+            margin-bottom: 20px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #0f172a, #1e293b, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .capitaliq-showcase-subtitle {
+            font-size: 1.4rem;
+            color: #64748b;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .capitaliq-executive-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #059669, #047857);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 35px;
+            box-shadow: 0 8px 25px rgba(5, 150, 105, 0.3);
+        }
+
+        /* Crisis Period Highlight */
+        .crisis-impact-banner {
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .crisis-impact-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><polygon points="20,5 35,15 35,25 20,35 5,25 5,15"/></g></svg>');
+            animation: crisis-flow 20s infinite linear;
+        }
+
+        @keyframes crisis-flow {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-40px); }
+        }
+
+        .crisis-banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .crisis-banner-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .crisis-banner-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .crisis-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .crisis-metric {
+            text-align: center;
+        }
+
+        .crisis-metric-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fef3c7;
+            display: block;
+        }
+
+        .crisis-metric-label {
+            font-size: 0.9rem;
+            color: #fca5a5;
+            margin-top: 5px;
+        }
+
+        /* Career Progression Timeline */
+        .capitaliq-career-progression {
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+            border-radius: 25px;
+            padding: 50px;
+            margin: 60px 0;
+            border-left: 6px solid #059669;
+        }
+
+        .capitaliq-progression-title {
+            text-align: center;
+            color: #065f46;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .capitaliq-progression-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            position: relative;
+        }
+
+        .capitaliq-progression-role {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid #059669;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .capitaliq-progression-role:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .capitaliq-progression-role.senior { border-left-color: #0f172a; }
+
+        .capitaliq-role-period {
+            background: #059669;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .capitaliq-progression-role.senior .capitaliq-role-period { background: #0f172a; }
+
+        .capitaliq-role-title {
+            color: #1e293b;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .capitaliq-role-achievements {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .capitaliq-role-achievements li {
+            background: #f1f5f9;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            color: #475569;
+            border-left: 4px solid #059669;
+            line-height: 1.5;
+        }
+
+        .capitaliq-progression-role.senior .capitaliq-role-achievements li {
+            border-left-color: #0f172a;
+        }
+
+        /* Executive-Level Metrics */
+        .capitaliq-executive-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .capitaliq-executive-metric-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-top: 5px solid #059669;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .capitaliq-executive-metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #059669, #047857);
+        }
+
+        .capitaliq-executive-metric-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .capitaliq-executive-metric-card.crisis { border-top-color: #dc2626; }
+        .capitaliq-executive-metric-card.crisis::before { background: linear-gradient(90deg, #dc2626, #b91c1c); }
+        .capitaliq-executive-metric-card.security { border-top-color: #7c3aed; }
+        .capitaliq-executive-metric-card.security::before { background: linear-gradient(90deg, #7c3aed, #6d28d9); }
+        .capitaliq-executive-metric-card.platform { border-top-color: #0f172a; }
+        .capitaliq-executive-metric-card.platform::before { background: linear-gradient(90deg, #0f172a, #1e293b); }
+        .capitaliq-executive-metric-card.innovation { border-top-color: #ea580c; }
+        .capitaliq-executive-metric-card.innovation::before { background: linear-gradient(90deg, #ea580c, #c2410c); }
+
+        .capitaliq-metric-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .capitaliq-metric-number {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #1e293b;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .capitaliq-metric-label {
+            color: #64748b;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        /* Security Innovation Section */
+        .security-innovation-section {
+            background: linear-gradient(135deg, #581c87, #7c3aed);
+            border-radius: 25px;
+            padding: 50px;
+            margin: 60px 0;
+            color: white;
+        }
+
+        .security-section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .security-innovation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .security-innovation-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .security-innovation-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .security-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+
+        .security-card-icon {
+            font-size: 2rem;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .security-card-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .security-card-description {
+            color: #e9d5ff;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .security-achievement-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .security-achievement-tag {
+            background: rgba(124, 58, 237, 0.3);
+            color: #ddd6fe;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Platform Excellence Section */
+        .platform-excellence-section {
+            margin: 60px 0;
+        }
+
+        .platform-section-title {
+            text-align: center;
+            color: #1e293b;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .platform-excellence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .platform-excellence-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #0f172a;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .platform-excellence-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #0f172a, #1e293b);
+        }
+
+        .platform-excellence-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .platform-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .platform-card-icon {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+        }
+
+        .platform-card-title {
+            color: #1e293b;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .platform-card-description {
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .platform-feature-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .platform-feature-tag {
+            background: #f1f5f9;
+            color: #334155;
+            padding: 6px 14px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Strategic Impact */
+        .capitaliq-strategic-impact {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border-radius: 25px;
+            padding: 50px;
+            margin: 60px 0;
+        }
+
+        .capitaliq-impact-title {
+            text-align: center;
+            color: #0c4a6e;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .capitaliq-impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .capitaliq-impact-item {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 2px solid #bae6fd;
+        }
+
+        .capitaliq-impact-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .capitaliq-impact-metric {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #0c4a6e;
+            margin-bottom: 10px;
+        }
+
+        .capitaliq-impact-description {
+            color: #475569;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Technology Ecosystem */
+        .capitaliq-tech-ecosystem {
+            margin: 60px 0;
+        }
+
+        .capitaliq-tech-title {
+            text-align: center;
+            color: #1e293b;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .capitaliq-tech-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .capitaliq-tech-category {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #059669;
+            transition: all 0.3s ease;
+        }
+
+        .capitaliq-tech-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .capitaliq-tech-category-title {
+            color: #1e293b;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .capitaliq-tech-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .capitaliq-tech-tool {
+            background: #f0fdf4;
+            color: #15803d;
+            padding: 8px 14px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #bbf7d0;
+            transition: all 0.2s ease;
+        }
+
+        .capitaliq-tech-tool:hover {
+            background: #bbf7d0;
+            color: #14532d;
+        }
+
+        /* Call to Action */
+        .capitaliq-cta {
+            text-align: center;
+            margin: 60px 0 40px;
+            padding: 40px;
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+            border-radius: 20px;
+            border: 1px solid #bbf7d0;
+        }
+
+        .capitaliq-cta h4 {
+            color: #065f46;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .capitaliq-cta p {
+            color: #166534;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .capitaliq-cta-button {
+            background: linear-gradient(135deg, #059669, #047857);
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 30px;
+            font-weight: 700;
+            display: inline-block;
+            margin: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(5, 150, 105, 0.3);
+        }
+
+        .capitaliq-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(5, 150, 105, 0.4);
+        }
+
+        .capitaliq-cta-button.secondary {
+            background: white;
+            color: #059669;
+            border: 2px solid #059669;
+        }
+
+        .capitaliq-cta-button.secondary:hover {
+            background: #059669;
+            color: white;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .capitaliq-showcase-content {
+                padding: 40px 25px;
+            }
+            
+            .capitaliq-showcase-title {
+                font-size: 2.5rem;
+            }
+            
+            .capitaliq-executive-metrics {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .capitaliq-progression-timeline,
+            .platform-excellence-grid,
+            .capitaliq-tech-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .capitaliq-metric-number {
+                font-size: 2.3rem;
+            }
+
+            .crisis-metrics {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="capitaliq-leadership-showcase">
+        <div class="container">
+            <div class="capitaliq-showcase-content">
+                <div class="capitaliq-showcase-header">
+                    <h2 class="capitaliq-showcase-title">Technology Quality Leadership</h2>
+                    <p class="capitaliq-showcase-subtitle">Pioneering quality assurance excellence during the 2008 financial crisis that transformed Capital IQ into the 4th largest financial data provider</p>
+                    <div class="capitaliq-executive-badge">Capital IQ (S&P Global) | May 19, 2008 - March 23, 2012</div>
+                    <p style="color: #64748b; font-size: 1.1rem; max-width: 900px; margin: 0 auto; line-height: 1.6;">Led comprehensive quality assurance initiatives during Capital IQ's most critical growth period, ensuring platform reliability and data integrity while the company expanded from 1,000 to 4,500+ clients. Established automation frameworks, implemented security testing protocols, and drove innovation that supported the platform's coverage of 99.9% of global market capitalization during the industry's greatest quality imperative.</p>
+                </div>
+
+                <!-- Crisis Period Impact Banner -->
+                <div class="crisis-impact-banner">
+                    <div class="crisis-banner-content">
+                        <h3 class="crisis-banner-title">⚡ Quality Assurance During Financial Crisis: A Business Survival Imperative</h3>
+                        <p class="crisis-banner-text">While the 2008 financial crisis demonstrated catastrophic consequences of poor quality in financial systems, our QA leadership enabled Capital IQ to achieve unprecedented growth, turning crisis into competitive advantage through superior platform reliability and data integrity.</p>
+                        <div class="crisis-metrics">
+                            <div class="crisis-metric">
+                                <span class="crisis-metric-number">50%</span>
+                                <span class="crisis-metric-label">Website Traffic Increase During Crisis</span>
+                            </div>
+                            <div class="crisis-metric">
+                                <span class="crisis-metric-number">4,500+</span>
+                                <span class="crisis-metric-label">Clients Achieved by 2011</span>
+                            </div>
+                            <div class="crisis-metric">
+                                <span class="crisis-metric-number">45x</span>
+                                <span class="crisis-metric-label">Client Growth Since 2002</span>
+                            </div>
+                            <div class="crisis-metric">
+                                <span class="crisis-metric-number">99.9%</span>
+                                <span class="crisis-metric-label">Global Market Cap Coverage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Progression -->
+                <div class="capitaliq-career-progression">
+                    <h3 class="capitaliq-progression-title">🚀 Quality Leadership Evolution During Crisis Period</h3>
+                    <div class="capitaliq-progression-timeline">
+                        <div class="capitaliq-progression-role">
+                            <div class="capitaliq-role-period">May 2008 - Mar 2011</div>
+                            <h4 class="capitaliq-role-title">Technology Quality Analyst</h4>
+                            <ul class="capitaliq-role-achievements">
+                                <li>Established comprehensive QA design and review processes for functional and data testing during critical platform expansion</li>
+                                <li>Developed comprehensive QTP/UFT automation frameworks using VBScript for test cases, test plans, and execution strategies supporting 4,500+ client growth</li>
+                                <li>Implemented robust defect tracking systems managing quality across capitaliq.com platform serving global financial markets</li>
+                                <li>Pioneered mobile testing and localization capabilities enabling Capital IQ's global market expansion</li>
+                                <li>Contributed to Innovation Day initiatives recognized by technology leadership for security and efficiency improvements</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="capitaliq-progression-role senior">
+                            <div class="capitaliq-role-period">Apr 2011 - Mar 2012</div>
+                            <h4 class="capitaliq-role-title">Senior Technology Quality Analyst</h4>
+                            <ul class="capitaliq-role-achievements">
+                                <li>Advanced QA leadership across financial data platform serving 60,000+ public companies and 685,000+ private companies</li>
+                                <li>Optimized QTP/UFT automation frameworks and senior-level VBScript enhancements supporting $1.2B McGraw Hill Financial segment</li>
+                                <li>Enhanced defect tracking and quality management systems during platform's most critical growth phase</li>
+                                <li>Led mobile testing and localization excellence for global financial intelligence platform</li>
+                                <li>Mentored junior team members in advanced testing methodologies and financial services quality standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Executive-Level Metrics -->
+                <div class="capitaliq-executive-metrics">
+                    <div class="capitaliq-executive-metric-card platform">
+                        <span class="capitaliq-metric-icon">🏢</span>
+                        <span class="capitaliq-metric-number">4,500+</span>
+                        <span class="capitaliq-metric-label">Clients Supported</span>
+                    </div>
+                    <div class="capitaliq-executive-metric-card crisis">
+                        <span class="capitaliq-metric-icon">📈</span>
+                        <span class="capitaliq-metric-number">$1.2B</span>
+                        <span class="capitaliq-metric-label">Financial Segment Value</span>
+                    </div>
+                    <div class="capitaliq-executive-metric-card platform">
+                        <span class="capitaliq-metric-icon">🌍</span>
+                        <span class="capitaliq-metric-number">99.9%</span>
+                        <span class="capitaliq-metric-label">Market Cap Coverage</span>
+                    </div>
+                    <div class="capitaliq-executive-metric-card security">
+                        <span class="capitaliq-metric-icon">🔒</span>
+                        <span class="capitaliq-metric-number">XSS</span>
+                        <span class="capitaliq-metric-label">Script Injection Discovery</span>
+                    </div>
+                    <div class="capitaliq-executive-metric-card innovation">
+                        <span class="capitaliq-metric-icon">🤖</span>
+                        <span class="capitaliq-metric-number">QTP/UFT</span>
+                        <span class="capitaliq-metric-label">VBScript Automation</span>
+                    </div>
+                    <div class="capitaliq-executive-metric-card platform">
+                        <span class="capitaliq-metric-icon">🏆</span>
+                        <span class="capitaliq-metric-number">4th</span>
+                        <span class="capitaliq-metric-label">Largest Data Provider</span>
+                    </div>
+                    <div class="capitaliq-executive-metric-card crisis">
+                        <span class="capitaliq-metric-icon">⚡</span>
+                        <span class="capitaliq-metric-number">SOX</span>
+                        <span class="capitaliq-metric-label">Compliance Testing</span>
+                    </div>
+                    <div class="capitaliq-executive-metric-card innovation">
+                        <span class="capitaliq-metric-icon">🎯</span>
+                        <span class="capitaliq-metric-number">3.75</span>
+                        <span class="capitaliq-metric-label">Years Crisis Leadership</span>
+                    </div>
+                </div>
+
+                <!-- Security Innovation Section -->
+                <div class="security-innovation-section">
+                    <h3 class="security-section-title">
+                        <span>🔐</span>
+                        Security Innovation & Vulnerability Discovery Excellence
+                    </h3>
+                    <div class="security-innovation-grid">
+                        <div class="security-innovation-card">
+                            <div class="security-card-header">
+                                <div class="security-card-icon">🛡️</div>
+                                <h5 class="security-card-title">Script Injection Vulnerability Discovery</h5>
+                            </div>
+                            <p class="security-card-description">Identified critical cross-site scripting (XSS) vulnerabilities in proprietary financial data platform through comprehensive security testing, preventing potential data breaches and maintaining financial data integrity for global client base.</p>
+                            <div class="security-achievement-tags">
+                                <span class="security-achievement-tag">XSS Detection</span>
+                                <span class="security-achievement-tag">Data Security</span>
+                                <span class="security-achievement-tag">Vulnerability Assessment</span>
+                                <span class="security-achievement-tag">Financial Platform Security</span>
+                            </div>
+                        </div>
+                        
+                        <div class="security-innovation-card">
+                            <div class="security-card-header">
+                                <div class="security-card-icon">🔍</div>
+                                <h5 class="security-card-title">OWASP Security Testing Implementation</h5>
+                            </div>
+                            <p class="security-card-description">Established comprehensive security testing protocols following OWASP guidelines, implementing automated vulnerability scanning and security code reviews focused on input validation and data transmission encryption for financial services compliance.</p>
+                            <div class="security-achievement-tags">
+                                <span class="security-achievement-tag">OWASP Guidelines</span>
+                                <span class="security-achievement-tag">Automated Scanning</span>
+                                <span class="security-achievement-tag">Input Validation</span>
+                                <span class="security-achievement-tag">Compliance Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="security-innovation-card">
+                            <div class="security-card-header">
+                                <div class="security-card-icon">⚖️</div>
+                                <h5 class="security-card-title">SOX Compliance Quality Assurance</h5>
+                            </div>
+                            <p class="security-card-description">Led Sarbanes-Oxley compliance testing initiatives including Section 302 and 404 requirements, ensuring financial report accuracy through comprehensive application controls testing, data validation, and audit trail verification.</p>
+                            <div class="security-achievement-tags">
+                                <span class="security-achievement-tag">SOX Section 302</span>
+                                <span class="security-achievement-tag">SOX Section 404</span>
+                                <span class="security-achievement-tag">Application Controls</span>
+                                <span class="security-achievement-tag">Audit Trail Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="security-innovation-card">
+                            <div class="security-card-header">
+                                <div class="security-card-icon">🎯</div>
+                                <h5 class="security-card-title">Innovation Day Recognition</h5>
+                            </div>
+                            <p class="security-card-description">Received technology leadership recognition during Innovation Day events for breakthrough contributions in security testing methodologies and efficiency improvements that enhanced platform reliability during critical growth period.</p>
+                            <div class="security-achievement-tags">
+                                <span class="security-achievement-tag">Leadership Recognition</span>
+                                <span class="security-achievement-tag">Innovation Excellence</span>
+                                <span class="security-achievement-tag">Process Improvement</span>
+                                <span class="security-achievement-tag">Security Methodologies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Platform Excellence Section -->
+                <div class="platform-excellence-section">
+                    <h3 class="platform-section-title">💻 Platform Excellence & Innovation Leadership</h3>
+                    <div class="platform-excellence-grid">
+                        <div class="platform-excellence-card">
+                            <div class="platform-card-header">
+                                <div class="platform-card-icon">🔗</div>
+                                <h5 class="platform-card-title">Xenu Link Testing Innovation</h5>
+                            </div>
+                            <div class="platform-card-description">Introduced Xenu free link testing tool enabling comprehensive website integrity validation in minutes rather than hours, dramatically improving QA efficiency for capitaliq.com platform during critical expansion period.</div>
+                            <div class="platform-feature-tags">
+                                <span class="platform-feature-tag">Link Validation</span>
+                                <span class="platform-feature-tag">Process Efficiency</span>
+                                <span class="platform-feature-tag">Tool Innovation</span>
+                                <span class="platform-feature-tag">Quality Automation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="platform-excellence-card">
+                            <div class="platform-card-header">
+                                <div class="platform-card-icon">🌐</div>
+                                <h5 class="platform-card-title">Global Financial Data Platform QA</h5>
+                            </div>
+                            <div class="platform-card-description">Established comprehensive testing protocols for platform serving 60,000+ public companies, 685,000+ private companies, and 312,000+ transactions with coverage of 99.9% of global market capitalization.</div>
+                            <div class="platform-feature-tags">
+                                <span class="platform-feature-tag">Global Coverage</span>
+                                <span class="platform-feature-tag">Data Integrity</span>
+                                <span class="platform-feature-tag">Transaction Testing</span>
+                                <span class="platform-feature-tag">Market Intelligence</span>
+                            </div>
+                        </div>
+                        
+                        <div class="platform-excellence-card">
+                            <div class="platform-card-header">
+                                <div class="platform-card-icon">📱</div>
+                                <h5 class="platform-card-title">Mobile & Localization Testing Pioneer</h5>
+                            </div>
+                            <div class="platform-card-description">Developed advanced mobile testing and localization capabilities for global market expansion, supporting Capital IQ's evolution into web-based architecture accessible across devices and geographic markets.</div>
+                            <div class="platform-feature-tags">
+                                <span class="platform-feature-tag">Mobile Testing</span>
+                                <span class="platform-feature-tag">Localization QA</span>
+                                <span class="platform-feature-tag">Cross-Device Compatibility</span>
+                                <span class="platform-feature-tag">Global Markets</span>
+                            </div>
+                        </div>
+                        
+                        <div class="platform-excellence-card">
+                            <div class="platform-card-header">
+                                <div class="platform-card-icon">📊</div>
+                                <h5 class="platform-card-title">Financial Data Testing Excellence</h5>
+                            </div>
+                            <div class="platform-card-description">Established comprehensive functional and data testing protocols for financial intelligence platform, ensuring accuracy and integrity of market data, company financials, and transaction records for global investment community.</div>
+                            <div class="platform-feature-tags">
+                                <span class="platform-feature-tag">Financial Data QA</span>
+                                <span class="platform-feature-tag">Functional Testing</span>
+                                <span class="platform-feature-tag">Data Validation</span>
+                                <span class="platform-feature-tag">Market Intelligence</span>
+                            </div>
+                        </div>
+                        
+                        <div class="platform-excellence-card">
+                            <div class="platform-card-header">
+                                <div class="platform-card-icon">🤖</div>
+                                <h5 class="platform-card-title">QTP/UFT VBScript Automation Excellence</h5>
+                            </div>
+                            <div class="platform-card-description">Architected comprehensive test automation frameworks using QuickTest Professional (QTP, now UFT) with VBScript for financial data platform testing, building robust automation suites that supported platform reliability during 45x client growth from 100 to 4,500+ customers.</div>
+                            <div class="platform-feature-tags">
+                                <span class="platform-feature-tag">QTP/UFT Expertise</span>
+                                <span class="platform-feature-tag">VBScript Development</span>
+                                <span class="platform-feature-tag">Automation Framework</span>
+                                <span class="platform-feature-tag">Financial Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Impact */
+                <div class="capitaliq-strategic-impact">
+                    <h3 class="capitaliq-impact-title">🌟 Strategic Financial Services Transformation Impact</h3>
+                    <div class="capitaliq-impact-grid">
+                        <div class="capitaliq-impact-item">
+                            <span class="capitaliq-impact-icon">💰</span>
+                            <div class="capitaliq-impact-metric">$1.2B Segment</div>
+                            <p class="capitaliq-impact-description">Supported McGraw Hill Financial segment growth through comprehensive QA excellence ensuring platform reliability for global financial intelligence</p>
+                        </div>
+                        <div class="capitaliq-impact-item">
+                            <span class="capitaliq-impact-icon">🏆</span>
+                            <div class="capitaliq-impact-metric">4th Position</div>
+                            <p class="capitaliq-impact-description">Enabled Capital IQ's rise to fourth-largest financial data provider through superior quality assurance and platform excellence</p>
+                        </div>
+                        <div class="capitaliq-impact-item">
+                            <span class="capitaliq-impact-icon">📊</span>
+                            <div class="capitaliq-impact-metric">Crisis Leadership</div>
+                            <p class="capitaliq-impact-description">Led quality initiatives during 2008 financial crisis when QA became business survival imperative across financial services industry</p>
+                        </div>
+                        <div class="capitaliq-impact-item">
+                            <span class="capitaliq-impact-icon">🔒</span>
+                            <div class="capitaliq-impact-metric">Security Excellence</div>
+                            <p class="capitaliq-impact-description">Discovered critical vulnerabilities and established security testing protocols protecting proprietary financial data for global client base</p>
+                        </div>
+                        <div class="capitaliq-impact-item">
+                            <span class="capitaliq-impact-icon">🚀</span>
+                            <div class="capitaliq-impact-metric">Platform Scaling</div>
+                            <p class="capitaliq-impact-description">Ensured quality excellence during platform expansion serving 745,000+ companies with 99.9% global market capitalization coverage</p>
+                        </div>
+                        <div class="capitaliq-impact-item">
+                            <span class="capitaliq-impact-icon">💡</span>
+                            <div class="capitaliq-impact-metric">Innovation Recognition</div>
+                            <p class="capitaliq-impact-description">Achieved technology leadership recognition for breakthrough innovations in testing efficiency and security methodologies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Ecosystem */
+                <div class="capitaliq-tech-ecosystem">
+                    <h3 class="capitaliq-tech-title">🛠️ Financial Services Quality Technology Ecosystem</h3>
+                    <div class="capitaliq-tech-categories">
+                        <div class="capitaliq-tech-category">
+                            <h5 class="capitaliq-tech-category-title">🧪 Test Automation & Frameworks</h5>
+                            <div class="capitaliq-tech-tools">
+                                <span class="capitaliq-tech-tool">QTP/UFT (QuickTest Professional)</span>
+                                <span class="capitaliq-tech-tool">VBScript Development</span>
+                                <span class="capitaliq-tech-tool">Test Case Automation</span>
+                                <span class="capitaliq-tech-tool">Test Plan Development</span>
+                                <span class="capitaliq-tech-tool">Execution Strategies</span>
+                                <span class="capitaliq-tech-tool">Object Repository Management</span>
+                                <span class="capitaliq-tech-tool">Data-Driven Testing</span>
+                                <span class="capitaliq-tech-tool">Regression Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="capitaliq-tech-category">
+                            <h5 class="capitaliq-tech-category-title">🔒 Security & Compliance Testing</h5>
+                            <div class="capitaliq-tech-tools">
+                                <span class="capitaliq-tech-tool">XSS Vulnerability Testing</span>
+                                <span class="capitaliq-tech-tool">Script Injection Detection</span>
+                                <span class="capitaliq-tech-tool">OWASP Guidelines</span>
+                                <span class="capitaliq-tech-tool">SOX Compliance Testing</span>
+                                <span class="capitaliq-tech-tool">Security Code Reviews</span>
+                                <span class="capitaliq-tech-tool">Input Validation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="capitaliq-tech-category">
+                            <h5 class="capitaliq-tech-category-title">💻 Platform & Data Testing</h5>
+                            <div class="capitaliq-tech-tools">
+                                <span class="capitaliq-tech-tool">Financial Data Validation</span>
+                                <span class="capitaliq-tech-tool">Database Testing</span>
+                                <span class="capitaliq-tech-tool">API Testing</span>
+                                <span class="capitaliq-tech-tool">Web Application Testing</span>
+                                <span class="capitaliq-tech-tool">Data Integrity Testing</span>
+                                <span class="capitaliq-tech-tool">Performance Testing</span>
+                            </div>
+                        </div>
+                        
+                        <div class="capitaliq-tech-category">
+                            <h5 class="capitaliq-tech-category-title">📱 Mobile & Localization</h5>
+                            <div class="capitaliq-tech-tools">
+                                <span class="capitaliq-tech-tool">Mobile Website Testing</span>
+                                <span class="capitaliq-tech-tool">Cross-Device Compatibility</span>
+                                <span class="capitaliq-tech-tool">Localization Testing</span>
+                                <span class="capitaliq-tech-tool">Multi-Language Support</span>
+                                <span class="capitaliq-tech-tool">Global Market Testing</span>
+                                <span class="capitaliq-tech-tool">Responsive Design QA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="capitaliq-tech-category">
+                            <h5 class="capitaliq-tech-category-title">🐛 Defect Management</h5>
+                            <div class="capitaliq-tech-tools">
+                                <span class="capitaliq-tech-tool">Defect Tracking Systems</span>
+                                <span class="capitaliq-tech-tool">Bug Lifecycle Management</span>
+                                <span class="capitaliq-tech-tool">Quality Metrics</span>
+                                <span class="capitaliq-tech-tool">Root Cause Analysis</span>
+                                <span class="capitaliq-tech-tool">Regression Analysis</span>
+                                <span class="capitaliq-tech-tool">Risk Assessment</span>
+                            </div>
+                        </div>
+                        
+                        <div class="capitaliq-tech-category">
+                            <h5 class="capitaliq-tech-category-title">🔗 Innovation Tools</h5>
+                            <div class="capitaliq-tech-tools">
+                                <span class="capitaliq-tech-tool">Xenu Link Testing</span>
+                                <span class="capitaliq-tech-tool">Website Integrity Tools</span>
+                                <span class="capitaliq-tech-tool">Link Validation</span>
+                                <span class="capitaliq-tech-tool">Process Automation</span>
+                                <span class="capitaliq-tech-tool">Efficiency Optimization</span>
+                                <span class="capitaliq-tech-tool">Quality Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="capitaliq-cta">
+                    <h4>🚀 Ready to Discuss Financial Services Quality Leadership?</h4>
+                    <p>Let's explore how my experience in leading quality assurance during the 2008 financial crisis that transformed financial data platforms, architecting comprehensive QTP/UFT automation frameworks with VBScript for financial testing, discovering critical security vulnerabilities in proprietary financial systems, pioneering automation frameworks that supported 45x client growth, introducing innovative testing tools that revolutionized efficiency, establishing comprehensive SOX compliance testing protocols, and driving platform excellence during Capital IQ's rise to the 4th largest financial data provider can accelerate your organization's quality transformation and financial technology initiatives</p>
+                    <a href="mailto:ankitrathi85@gmail.com" class="capitaliq-cta-button">
+                        📧 Connect via Email
+                    </a>
+                    <a href="https://linkedin.com/in/ankitrathi85" target="_blank" class="capitaliq-cta-button secondary">
+                        💼 View LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
