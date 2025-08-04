@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senior QA Associate at Sapient Nitro</title>
     <style>
+        /* Navigation Styles */
+        .portfolio-navigation {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .nav-back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            color: #1e293b;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .nav-back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 1);
+        }
+
         /* Sapient Nitro QA Leadership Section */
         .sapient-leadership-showcase {
             background: linear-gradient(135deg, #dc2626 0%, #991b1b 50%, #7f1d1d 100%);
@@ -667,6 +698,16 @@
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
+            .portfolio-navigation {
+                top: 10px;
+                left: 10px;
+            }
+
+            .nav-back-button {
+                padding: 10px 16px;
+                font-size: 0.85rem;
+            }
+
             .sapient-showcase-content {
                 padding: 40px 25px;
             }
@@ -693,6 +734,13 @@
     </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="portfolio-navigation">
+        <a href="index.html" class="nav-back-button">
+            ← Back to Portfolio
+        </a>
+    </nav>
+
     <section class="sapient-leadership-showcase">
         <div class="container">
             <div class="sapient-showcase-content">
@@ -1050,7 +1098,7 @@
                     </div>
                 </div>
 
-                <!-- Strategic Impact */
+                <!-- Strategic Impact -->
                 <div class="sapient-strategic-impact">
                     <h3 class="sapient-impact-title">🌟 Strategic Digital Transformation Impact</h3>
                     <div class="sapient-impact-grid">

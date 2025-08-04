@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trainee Software Engineer at Impetus Technologies</title>
     <style>
+        /* Navigation Styles */
+        .portfolio-navigation {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .nav-back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            color: #1e293b;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .nav-back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 1);
+        }
+
         /* Impetus Technologies Foundational Learning Section */
         .impetus-leadership-showcase {
             background: linear-gradient(135deg, #059669 0%, #047857 50%, #065f46 100%);
@@ -637,6 +668,16 @@
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
+            .portfolio-navigation {
+                top: 10px;
+                left: 10px;
+            }
+
+            .nav-back-button {
+                padding: 10px 16px;
+                font-size: 0.85rem;
+            }
+
             .impetus-showcase-content {
                 padding: 40px 25px;
             }
@@ -667,6 +708,13 @@
     </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="portfolio-navigation">
+        <a href="index.html" class="nav-back-button">
+            ← Back to Portfolio
+        </a>
+    </nav>
+
     <section class="impetus-leadership-showcase">
         <div class="container">
             <div class="impetus-showcase-content">
@@ -862,7 +910,7 @@
                     </div>
                 </div>
 
-                <!-- Company Context Section */
+                <!-- Company Context Section -->
                 <div class="impetus-company-context">
                     <h3 class="company-context-title">🏢 Impetus Technologies: Innovation-Driven Software Excellence</h3>
                     <div class="company-context-grid">
@@ -924,7 +972,7 @@
                     </div>
                 </div>
 
-                <!-- Career Foundation Impact */
+                <!-- Career Foundation Impact -->
                 <div class="impetus-career-foundation">
                     <h3 class="foundation-impact-title">🌟 Long-Term Career Foundation Impact</h3>
                     <div class="foundation-impact-grid">
@@ -961,7 +1009,7 @@
                     </div>
                 </div>
 
-                <!-- Technology Learning Ecosystem */
+                <!-- Technology Learning Ecosystem -->
                 <div class="impetus-tech-learning">
                     <h3 class="tech-learning-title">💻 Foundational Technology Learning Ecosystem</h3>
                     <div class="tech-learning-categories">

@@ -101,6 +101,70 @@
             margin-right: auto;
         }
 
+        /* Financial Impact Section */
+        .financial-impact-banner {
+            background: linear-gradient(135deg, #059669, #047857);
+            color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .financial-impact-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><circle cx="20" cy="20" r="3"/></g></svg>');
+            animation: financial-pulse 20s infinite linear;
+        }
+
+        @keyframes financial-pulse {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-40px); }
+        }
+
+        .financial-banner-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .financial-banner-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .financial-metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .financial-metric {
+            text-align: center;
+        }
+
+        .financial-metric-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fef3c7;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .financial-metric-label {
+            font-size: 0.95rem;
+            color: #dcfce7;
+            line-height: 1.3;
+        }
+
         /* Key Achievements Grid */
         .achievements-grid {
             display: grid;
@@ -156,16 +220,438 @@
             line-height: 1.4;
         }
 
-        /* Career Journey Section */
-        .journey-section {
-            background: linear-gradient(135deg, #f8f9fa, #e8f2ff);
-            padding: 100px 0;
+        /* AI & Innovation Section */
+        .ai-innovation-section {
+            background: linear-gradient(135deg, #1e293b, #334155);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .ai-innovation-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.03"><polygon points="30,10 50,20 50,40 30,50 10,40 10,20"/></g></svg>');
+            animation: ai-float 25s infinite linear;
+        }
+
+        @keyframes ai-float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-60px, -60px) rotate(360deg); }
         }
 
         .section-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .ai-section-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .ai-section-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #e2e8f0;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ai-innovations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .ai-innovation-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .ai-innovation-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .ai-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .ai-card-icon {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.8rem;
+        }
+
+        .ai-card-title {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .ai-card-description {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .ai-achievements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .ai-achievement-tag {
+            background: rgba(102, 126, 234, 0.3);
+            color: #ddd6fe;
+            padding: 8px 16px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Project Highlights Section */
+        .project-highlights-section {
+            background: linear-gradient(135deg, #f8f9fa, #e8f2ff);
+            padding: 80px 0;
+        }
+
+        .project-highlights-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        .project-highlights-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .project-highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 40px;
+        }
+
+        .project-highlight-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        .project-highlight-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-highlight-card.whereto { --accent-color: #667eea; }
+        .project-highlight-card.spglobal { --accent-color: #7c3aed; }
+        .project-highlight-card.sapient { --accent-color: #dc2626; }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .project-icon {
+            background: linear-gradient(135deg, var(--accent-color), var(--accent-color));
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+            filter: brightness(1.1);
+        }
+
+        .project-info {
+            flex: 1;
+        }
+
+        .project-company {
+            color: #2d3748;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+        }
+
+        .project-role {
+            color: #666;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .project-impact-summary {
+            color: #555;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .project-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .project-metric {
+            text-align: center;
+            padding: 15px 10px;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 10px;
+        }
+
+        .project-metric-number {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            display: block;
+        }
+
+        .project-metric-label {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .project-technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-badge {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Community Contributions Section */
+        .community-section {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .community-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        .community-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+        }
+
+        .community-card {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-top: 6px solid #059669;
+            transition: all 0.3s ease;
+        }
+
+        .community-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .community-card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .community-card-icon {
+            background: linear-gradient(135deg, #059669, #047857);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+        }
+
+        .community-card-title {
+            color: #2d3748;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .community-card-description {
+            color: #555;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .community-card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #059669, #047857);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .community-card-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(5, 150, 105, 0.3);
+        }
+
+        /* Technology Expertise Section */
+        .tech-expertise-section {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .tech-expertise-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        .tech-expertise-subtitle {
+            text-align: center;
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Technology Categories Grid */
+        .tech-categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .tech-category-card {
+            background: linear-gradient(135deg, #f8f9fa, #e8f2ff);
+            border-radius: 20px;
+            padding: 30px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .tech-category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .tech-category-title {
+            color: #2d3748;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tech-category-icon {
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .tech-tools-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-tool-tag {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 6px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Career Journey Section */
+        .journey-section {
+            background: linear-gradient(135deg, #f8f9fa, #e8f2ff);
+            padding: 100px 0;
         }
 
         .section-title {
@@ -405,7 +891,16 @@
                 gap: 20px;
             }
 
-            .portfolio-grid {
+            .financial-metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .portfolio-grid,
+            .ai-innovations-grid,
+            .project-highlights-grid,
+            .community-grid,
+            .tech-categories-grid {
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
@@ -421,6 +916,14 @@
             .contact-buttons {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .ai-section-title,
+            .section-title,
+            .project-highlights-title,
+            .community-title,
+            .tech-expertise-title {
+                font-size: 2.2rem;
             }
         }
 
@@ -440,6 +943,10 @@
             .portfolio-cta {
                 padding: 0 25px 25px;
             }
+
+            .financial-metrics-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -453,6 +960,39 @@
                 <p class="hero-description">
                     Seasoned <strong>QA Engineering Leader</strong> with <strong>18+ years</strong> of technical excellence, architecting comprehensive test automation frameworks across financial services, automotive, travel, and enterprise platforms. Led cross-functional engineering teams of <strong>25+ members</strong>, pioneered industry-leading QA methodologies, and delivered mission-critical technology solutions during pivotal transformations including the 2008 financial crisis and major digital platform migrations.
                 </p>
+
+                <!-- Financial Impact Banner -->
+                <div class="financial-impact-banner">
+                    <div class="financial-banner-content">
+                        <h3 class="financial-banner-title">💰 Proven Financial & Business Impact</h3>
+                        <div class="financial-metrics-grid">
+                            <div class="financial-metric">
+                                <span class="financial-metric-number">$2M+</span>
+                                <span class="financial-metric-label">Annual QA Budget Managed</span>
+                            </div>
+                            <div class="financial-metric">
+                                <span class="financial-metric-number">$300K</span>
+                                <span class="financial-metric-label">Annual Cost Savings Achieved</span>
+                            </div>
+                            <div class="financial-metric">
+                                <span class="financial-metric-number">99.5%</span>
+                                <span class="financial-metric-label">Platform Uptime Maintained</span>
+                            </div>
+                            <div class="financial-metric">
+                                <span class="financial-metric-number">60%</span>
+                                <span class="financial-metric-label">Defect Reduction</span>
+                            </div>
+                            <div class="financial-metric">
+                                <span class="financial-metric-number">35%</span>
+                                <span class="financial-metric-label">Time-to-Market Reduction</span>
+                            </div>
+                            <div class="financial-metric">
+                                <span class="financial-metric-number">45%</span>
+                                <span class="financial-metric-label">Production Incidents Reduced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Key Achievements Grid -->
                 <div class="achievements-grid">
@@ -491,136 +1031,350 @@
         </div>
     </section>
 
-    <!-- Technology Expertise Section -->
-    <section style="background: white; padding: 80px 0;">
+    <!-- AI & Innovation Section -->
+    <section class="ai-innovation-section">
         <div class="section-container">
-            <h2 class="section-title">Technology Leadership & Engineering Expertise</h2>
-            <p class="section-subtitle">
-                18+ years of deep technical expertise across diverse technology stacks, leading engineering teams and architecting enterprise-scale solutions
+            <h2 class="ai-section-title">🤖 AI & VIBE Coding Innovation Leadership</h2>
+            <p class="ai-section-subtitle">
+                Pioneering the integration of AI and VIBE (Visually Intelligent Backend Engineering) coding practices in software testing, transforming traditional QA methodologies through intelligent automation and advanced development practices
             </p>
 
-            <!-- Technology Categories Grid -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px;">
+            <div class="ai-innovations-grid">
+                <div class="ai-innovation-card">
+                    <div class="ai-card-header">
+                        <div class="ai-card-icon">🧠</div>
+                        <h3 class="ai-card-title">AI-Powered QA Transformation</h3>
+                    </div>
+                    <p class="ai-card-description">
+                        Led enterprise adoption of AI in testing processes at WhereTo, implementing ChatGPT-powered test case generation, intelligent test data creation, and automated code snippet generation. Achieved 35% acceleration in delivery cycles while maintaining quality standards.
+                    </p>
+                    <div class="ai-achievements">
+                        <span class="ai-achievement-tag">ChatGPT Integration</span>
+                        <span class="ai-achievement-tag">Test Case AI Generation</span>
+                        <span class="ai-achievement-tag">Intelligent Test Data</span>
+                        <span class="ai-achievement-tag">35% Faster Delivery</span>
+                    </div>
+                </div>
                 
-                <!-- Test Automation & Frameworks -->
-                <div style="background: linear-gradient(135deg, #f8f9fa, #e8f2ff); border-radius: 20px; padding: 30px; border-left: 5px solid #667eea;">
-                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                        <span style="background: #667eea; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🤖</span>
-                        Test Automation & Frameworks
-                    </h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Selenium WebDriver</span>
-                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">QTP/UFT</span>
-                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">WebDriverIO</span>
-                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Cucumber BDD</span>
-                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">TestNG</span>
-                        <span style="background: rgba(102, 126, 234, 0.1); color: #667eea; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">JMeter</span>
+                <div class="ai-innovation-card">
+                    <div class="ai-card-header">
+                        <div class="ai-card-icon">⚡</div>
+                        <h3 class="ai-card-title">VIBE Coding Implementation</h3>
+                    </div>
+                    <p class="ai-card-description">
+                        Pioneered VIBE (Visually Intelligent Backend Engineering) coding practices using Windsurf IDE for test automation development. Established visual-first development workflows that enhanced code maintainability and accelerated automation framework development by 40%.
+                    </p>
+                    <div class="ai-achievements">
+                        <span class="ai-achievement-tag">Windsurf IDE Adoption</span>
+                        <span class="ai-achievement-tag">Visual Development</span>
+                        <span class="ai-achievement-tag">40% Faster Development</span>
+                        <span class="ai-achievement-tag">Enhanced Maintainability</span>
                     </div>
                 </div>
-
-                <!-- Programming & Development -->
-                <div style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-radius: 20px; padding: 30px; border-left: 5px solid #059669;">
-                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                        <span style="background: #059669; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">💻</span>
-                        Programming & Development
-                    </h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Java</span>
-                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">JavaScript</span>
-                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">VBScript</span>
-                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Node.js</span>
-                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Spring Framework</span>
-                        <span style="background: rgba(5, 150, 105, 0.1); color: #059669; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Maven</span>
+                
+                <div class="ai-innovation-card">
+                    <div class="ai-card-header">
+                        <div class="ai-card-icon">🎯</div>
+                        <h3 class="ai-card-title">QA-Specific AI Prompts & Tools</h3>
                     </div>
-                </div>
-
-                <!-- Cloud & DevOps -->
-                <div style="background: linear-gradient(135deg, #fef3c7, #fed7aa); border-radius: 20px; padding: 30px; border-left: 5px solid #f59e0b;">
-                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                        <span style="background: #f59e0b; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">☁️</span>
-                        Cloud & DevOps Engineering
-                    </h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">AWS Multi-Region</span>
-                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Jenkins CI/CD</span>
-                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Docker</span>
-                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Ansible Tower</span>
-                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Azure DevOps</span>
-                        <span style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Kibana/LogStash</span>
-                    </div>
-                </div>
-
-                <!-- Enterprise Platforms -->
-                <div style="background: linear-gradient(135deg, #fdf2f8, #fce7f3); border-radius: 20px; padding: 30px; border-left: 5px solid #e11d48;">
-                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                        <span style="background: #e11d48; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🏢</span>
-                        Enterprise Platforms & Integration
-                    </h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Adobe DayCQ/AEM</span>
-                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">GDS Integration</span>
-                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Amadeus/Sabre</span>
-                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">LoadRunner Enterprise</span>
-                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">BrowserStack</span>
-                        <span style="background: rgba(225, 29, 72, 0.1); color: #e11d48; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">OWASP ZAP</span>
-                    </div>
-                </div>
-
-                <!-- Security & Compliance -->
-                <div style="background: linear-gradient(135deg, #f3e8ff, #e9d5ff); border-radius: 20px; padding: 30px; border-left: 5px solid #7c3aed;">
-                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                        <span style="background: #7c3aed; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🔒</span>
-                        Security & Compliance Engineering
-                    </h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">OWASP Guidelines</span>
-                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">SOX Compliance</span>
-                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">XSS Testing</span>
-                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">CyberArk PAM</span>
-                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">WCAG 2.0</span>
-                        <span style="background: rgba(124, 58, 237, 0.1); color: #7c3aed; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Vulnerability Assessment</span>
-                    </div>
-                </div>
-
-                <!-- Industry Domains -->
-                <div style="background: linear-gradient(135deg, #fef7ff, #fdf4ff); border-radius: 20px; padding: 30px; border-left: 5px solid #a855f7;">
-                    <h3 style="color: #2d3748; font-size: 1.3rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                        <span style="background: #a855f7; color: white; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">🌐</span>
-                        Industry Domain Expertise
-                    </h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Financial Services</span>
-                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Travel Technology</span>
-                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Automotive Data</span>
-                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Digital Marketing</span>
-                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Sports Entertainment</span>
-                        <span style="background: rgba(168, 85, 247, 0.1); color: #a855f7; padding: 6px 12px; border-radius: 12px; font-size: 0.85rem; font-weight: 500;">Commodity Intelligence</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Engineering Leadership Highlights -->
-            <div style="background: linear-gradient(135deg, #1e293b, #334155); color: white; border-radius: 25px; padding: 50px; margin-top: 60px; text-align: center;">
-                <h3 style="font-size: 2rem; margin-bottom: 30px; color: white;">Engineering Leadership Philosophy</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
-                    <div style="padding: 20px;">
-                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🎯</div>
-                        <h4 style="color: #60a5fa; margin-bottom: 10px; font-size: 1.2rem;">Technical Excellence</h4>
-                        <p style="opacity: 0.9; line-height: 1.5;">Architecting scalable automation frameworks and establishing engineering best practices across diverse technology stacks</p>
-                    </div>
-                    <div style="padding: 20px;">
-                        <div style="font-size: 2.5rem; margin-bottom: 15px;">👥</div>
-                        <h4 style="color: #60a5fa; margin-bottom: 10px; font-size: 1.2rem;">Team Building</h4>
-                        <p style="opacity: 0.9; line-height: 1.5;">Scaling cross-functional engineering teams and mentoring next-generation QA leaders through hands-on technical guidance</p>
-                    </div>
-                    <div style="padding: 20px;">
-                        <div style="font-size: 2.5rem; margin-bottom: 15px;">🚀</div>
-                        <h4 style="color: #60a5fa; margin-bottom: 10px; font-size: 1.2rem;">Innovation Driver</h4>
-                        <p style="opacity: 0.9; line-height: 1.5;">Pioneering industry-first testing methodologies and driving digital transformation through quality engineering</p>
+                    <p class="ai-card-description">
+                        Created comprehensive library of QA-specific AI prompts for test case creation, bug report generation, and technical documentation. Developed intelligent code snippet generation workflows that reduced manual effort by 50% across testing activities.
+                    </p>
+                    <div class="ai-achievements">
+                        <span class="ai-achievement-tag">Custom AI Prompts</span>
+                        <span class="ai-achievement-tag">Bug Report AI</span>
+                        <span class="ai-achievement-tag">50% Effort Reduction</span>
+                        <span class="ai-achievement-tag">Documentation AI</span>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Project Highlights Section -->
+    <section class="project-highlights-section">
+        <div class="section-container">
+            <h2 class="project-highlights-title">🚀 Major Project Achievements & Impact</h2>
+            <p class="project-highlights-subtitle">
+                Transformative QA leadership delivering measurable business impact across enterprise platforms and critical digital initiatives
+            </p>
+
+            <div class="project-highlights-grid">
+                <div class="project-highlight-card whereto">
+                    <div class="project-header">
+                        <div class="project-icon">✈️</div>
+                        <div class="project-info">
+                            <h3 class="project-company">WhereTo (Flight Centre)</h3>
+                            <p class="project-role">Head of QA • 2022-2025</p>
+                        </div>
+                    </div>
+                    <p class="project-impact-summary">
+                        Built and scaled enterprise QA organization for global travel platform serving 6,000+ corporate clients across 95+ countries. Led digital transformation across 8 specialized business domains with comprehensive GDS integrations.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="project-metric">
+                            <span class="project-metric-number">$2M</span>
+                            <span class="project-metric-label">Budget Managed</span>
+                        </div>
+                        <div class="project-metric">
+                            <span class="project-metric-number">99.5%</span>
+                            <span class="project-metric-label">Uptime</span>
+                        </div>
+                        <div class="project-metric">
+                            <span class="project-metric-number">25+</span>
+                            <span class="project-metric-label">Engineers</span>
+                        </div>
+                        <div class="project-metric">
+                            <span class="project-metric-number">8</span>
+                            <span class="project-metric-label">Scrum Teams</span>
+                        </div>
+                    </div>
+                    <div class="project-technologies">
+                        <span class="tech-badge">JET Framework</span>
+                        <span class="tech-badge">RADAR Analytics</span>
+                        <span class="tech-badge">GDS Integration</span>
+                        <span class="tech-badge">AI Implementation</span>
+                    </div>
+                </div>
+
+                <div class="project-highlight-card spglobal">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <div class="project-info">
+                            <h3 class="project-company">S&P Global Platts</h3>
+                            <p class="project-role">Associate Director • 2017-2022</p>
+                        </div>
+                    </div>
+                    <p class="project-impact-summary">
+                        Led enterprise test engineering transformation during $44B IHS Markit merger. Established automation standards across 25+ Scrum teams and managed Center of Excellence for global financial data platforms.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="project-metric">
+                            <span class="project-metric-number">$44B</span>
+                            <span class="project-metric-label">Merger Support</span>
+                        </div>
+                        <div class="project-metric">
+                            <span class="project-metric-number">25+</span>
+                            <span class="project-metric-label">Scrum Teams</span>
+                        </div>
+                        <div class="project-metric">
+                            <span class="project-metric-number">40+</span>
+                            <span class="project-metric-label">Applications</span>
+                        </div>
+                        <div class="project-metric">
+                            <span class="project-metric-number">70%</span>
+                            <span class="project-metric-label">Issue Reduction</span>
+                        </div>
+                    </div>
+                    <div class="project-technologies">
+                        <span class="tech-badge">PACE Framework</span>
+                        <span class="tech-badge">NEST Framework</span>
+                        <span class="tech-badge">DevOps 3D Dashboard</span>
+                        <span class="tech-badge">Multi-Region AWS</span>
+                    </div>
+                </div>
+
+                <div class="project-highlight-card sapient">
+                    <div class="project-header">
+                        <div class="project-icon">🏁</div>
+                        <div class="project-info">
+                            <h3 class="project-company">Sapient Nitro</h3>
+                            <p class="project-role">Senior Associate QA • 2012-2015</p>
+                        </div>
+                    </div>
+                    <p class="project-impact-summary">
+                        Led strategic digital transformation for NASCAR.com and automotive data platforms. Developed Cucumber/Gherkin automation frameworks during critical platform migrations supporting $10.94B broadcast contracts.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="project-metric">
+                            <span class="project-metric-number">$10.94B</span>
+                            <span class="project-metric-label">Contract Value</span>
+                        </div>
+                        <div class="project-metric">
+                            <span class="project-metric-number">1.3TB</span>
+                            <span class="project-metric-label">Race Data</span>
+                        </div>
+                        <div class="project-metric">
+                            <span class="project-metric-number">50K+</span>
+                            <span class="project-metric-label">Concurrent Users</span>
+                        </div>
+                        <div class="project-metric">
+                            <span class="project-metric-number">250M+</span>
+                            <span class="project-metric-label">Data Points</span>
+                        </div>
+                    </div>
+                    <div class="project-technologies">
+                        <span class="tech-badge">Cucumber BDD</span>
+                        <span class="tech-badge">Adobe DayCQ</span>
+                        <span class="tech-badge">NASCAR Platform</span>
+                        <span class="tech-badge">JATO Automotive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Contributions Section -->
+    <section class="community-section">
+        <div class="section-container">
+            <h2 class="community-title">🌟 Latest Community Contributions</h2>
+            <p class="community-subtitle">
+                Open-source contributions advancing the quality engineering community through innovative tools and frameworks
+            </p>
+
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-card-header">
+                        <div class="community-card-icon">♿</div>
+                        <h3 class="community-card-title">Accessibility Audit Framework</h3>
+                    </div>
+                    <p class="community-card-description">
+                        Comprehensive accessibility testing framework implementing WCAG 2.1 guidelines with automated auditing capabilities. Features multi-browser support, detailed reporting, and integration with CI/CD pipelines for continuous accessibility validation.
+                    </p>
+                    <a href="https://github.com/ankitrathi85/accessibility-audit" target="_blank" class="community-card-link">
+                        <span>🔗</span>
+                        View on GitHub
+                    </a>
+                </div>
+
+                <div class="community-card">
+                    <div class="community-card-header">
+                        <div class="community-card-icon">🤖</div>
+                        <h3 class="community-card-title">AI Test Automation Framework</h3>
+                    </div>
+                    <p class="community-card-description">
+                        Next-generation test automation framework powered by AI capabilities. Integrates machine learning for intelligent test case generation, self-healing test scripts, and predictive analytics for test optimization and maintenance.
+                    </p>
+                    <a href="https://github.com/ankitrathi85/ai-test-automation-framework" target="_blank" class="community-card-link">
+                        <span>🔗</span>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Expertise Section -->
+    <section class="tech-expertise-section">
+        <div class="section-container">
+            <h2 class="tech-expertise-title">Technology Leadership & Engineering Expertise</h2>
+            <p class="tech-expertise-subtitle">
+                18+ years of deep technical expertise across diverse technology stacks, leading engineering teams and architecting enterprise-scale solutions
+            </p>
+
+            <!-- Technology Categories Grid -->
+            <div class="tech-categories-grid">
+                
+                <!-- Test Automation & Frameworks -->
+                <div class="tech-category-card">
+                    <h3 class="tech-category-title">
+                        <span class="tech-category-icon">🤖</span>
+                        Test Automation & Frameworks
+                    </h3>
+                    <div class="tech-tools-grid">
+                        <span class="tech-tool-tag">Selenium WebDriver</span>
+                        <span class="tech-tool-tag">QTP/UFT</span>
+                        <span class="tech-tool-tag">WebDriverIO</span>
+                        <span class="tech-tool-tag">Cucumber BDD</span>
+                        <span class="tech-tool-tag">TestNG</span>
+                        <span class="tech-tool-tag">JMeter</span>
+                        <span class="tech-tool-tag">Cypress</span>
+                        <span class="tech-tool-tag">Playwright</span>
+                    </div>
+                </div>
+
+                <!-- Programming & Development -->
+                <div class="tech-category-card">
+                    <h3 class="tech-category-title">
+                        <span class="tech-category-icon">💻</span>
+                        Programming & Development
+                    </h3>
+                    <div class="tech-tools-grid">
+                        <span class="tech-tool-tag">Java</span>
+                        <span class="tech-tool-tag">JavaScript</span>
+                        <span class="tech-tool-tag">TypeScript</span>
+                        <span class="tech-tool-tag">VBScript</span>
+                        <span class="tech-tool-tag">Node.js</span>
+                        <span class="tech-tool-tag">Spring Framework</span>
+                        <span class="tech-tool-tag">Maven</span>
+                        <span class="tech-tool-tag">SQL</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="tech-category-card">
+                    <h3 class="tech-category-title">
+                        <span class="tech-category-icon">☁️</span>
+                        Cloud & DevOps Engineering
+                    </h3>
+                    <div class="tech-tools-grid">
+                        <span class="tech-tool-tag">AWS Multi-Region</span>
+                        <span class="tech-tool-tag">Jenkins CI/CD</span>
+                        <span class="tech-tool-tag">Docker</span>
+                        <span class="tech-tool-tag">Kubernetes</span>
+                        <span class="tech-tool-tag">Ansible Tower</span>
+                        <span class="tech-tool-tag">Azure DevOps</span>
+                        <span class="tech-tool-tag">GitHub Actions</span>
+                        <span class="tech-tool-tag">Kibana/LogStash</span>
+                    </div>
+                </div>
+
+                <!-- Enterprise Platforms -->
+                <div class="tech-category-card">
+                    <h3 class="tech-category-title">
+                        <span class="tech-category-icon">🏢</span>
+                        Enterprise Platforms & Integration
+                    </h3>
+                    <div class="tech-tools-grid">
+                        <span class="tech-tool-tag">Adobe DayCQ/AEM</span>
+                        <span class="tech-tool-tag">GDS Integration</span>
+                        <span class="tech-tool-tag">Amadeus/Sabre</span>
+                        <span class="tech-tool-tag">LoadRunner Enterprise</span>
+                        <span class="tech-tool-tag">BrowserStack</span>
+                        <span class="tech-tool-tag">OWASP ZAP</span>
+                        <span class="tech-tool-tag">REST/SOAP APIs</span>
+                        <span class="tech-tool-tag">Microservices</span>
+                    </div>
+                </div>
+
+                <!-- Security & Compliance -->
+                <div class="tech-category-card">
+                    <h3 class="tech-category-title">
+                        <span class="tech-category-icon">🔒</span>
+                        Security & Compliance Engineering
+                    </h3>
+                    <div class="tech-tools-grid">
+                        <span class="tech-tool-tag">OWASP Guidelines</span>
+                        <span class="tech-tool-tag">SOX Compliance</span>
+                        <span class="tech-tool-tag">XSS Testing</span>
+                        <span class="tech-tool-tag">CyberArk PAM</span>
+                        <span class="tech-tool-tag">WCAG 2.0/2.1</span>
+                        <span class="tech-tool-tag">Vulnerability Assessment</span>
+                        <span class="tech-tool-tag">Security Testing</span>
+                        <span class="tech-tool-tag">Penetration Testing</span>
+                    </div>
+                </div>
+
+                <!-- AI & Innovation -->
+                <div class="tech-category-card">
+                    <h3 class="tech-category-title">
+                        <span class="tech-category-icon">🧠</span>
+                        AI & Innovation Technologies
+                    </h3>
+                    <div class="tech-tools-grid">
+                        <span class="tech-tool-tag">ChatGPT Integration</span>
+                        <span class="tech-tool-tag">VIBE Coding</span>
+                        <span class="tech-tool-tag">Windsurf IDE</span>
+                        <span class="tech-tool-tag">AI Test Generation</span>
+                        <span class="tech-tool-tag">Machine Learning</span>
+                        <span class="tech-tool-tag">Predictive Analytics</span>
+                        <span class="tech-tool-tag">Intelligent Automation</span>
+                        <span class="tech-tool-tag">Self-Healing Tests</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Career Journey Section -->
     <section class="journey-section">
